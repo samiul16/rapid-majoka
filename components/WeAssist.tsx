@@ -5,7 +5,7 @@ import Image from "next/image";
 const ConstructionMaterialsSection = () => {
   return (
     <div className="w-full bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Header */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-stone-900  mb-16 px-4">
           We Assist in Choosing the Perfect Materials for Your Project

@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         <div
           className="bg-[#EDE8E9] rounded-3xl p-8 lg:p-12 shadow-lg"
           data-aos="fade-up"

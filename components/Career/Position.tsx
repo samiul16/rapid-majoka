@@ -57,7 +57,7 @@ const Position = () => {
 
   return (
     <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Header */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
           Current Open Position

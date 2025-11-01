@@ -183,7 +183,7 @@ const HeroSection = () => {
       <div className="relative z-10 flex flex-col h-full px-4">
         {/* Top Content - Heading and Paragraph */}
         <div
-          className="max-w-[841px] mx-auto flex flex-col items-center space-y-5 pt-32 md:pt-20 lg:pt-54"
+          className="max-w-8xl mx-auto flex flex-col items-center space-y-5 pt-32 md:pt-20 lg:pt-54"
           data-aos="fade-down"
           data-aos-duration="1200"
           data-aos-delay="200"

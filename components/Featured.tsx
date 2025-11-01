@@ -57,7 +57,7 @@ const FeaturedProjects = () => {
       } else if (window.innerWidth < 1024) {
         setCardsPerView(2); // Tablet: 2 cards
       } else {
-        setCardsPerView(3); // Desktop: 3 cards
+        setCardsPerView(4); // Desktop: 4 cards
       }
     };
 
@@ -163,115 +163,135 @@ const FeaturedProjects = () => {
   };
 
   return (
-    <div className="bg-[#340510] flex flex-col items-center w-full py-20 gap-16 px-4 md:px-8 lg:px-16">
-      <div className=" px-4 py-8 rounded-lg ">
-        <div className="flex flex-col items-center gap-4 max-w-4xl mx-auto text-center ">
-          <h2 className="text-4xl font-bold tracking-[-0.4px] text-gray-100">
-            Our Featured Projects
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Explore Our Highlighted Projects That Reflect Our Identity
-          </p>
-        </div>
+    <div
+      className="relative flex flex-col items-center w-full py-20 gap-16 px-4 md:px-8 lg:px-16"
+      style={{
+        backgroundImage: "url(/featured-bg.jpeg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+   
 
-        <div className="relative w-full max-w-[1600px] mx-auto rounded-xl -mt-6">
-          <div className="overflow-hidden px-4 py-6">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{
-                transform: `translateX(-${
-                  currentIndex * (100 / cardsPerView)
-                }%)`,
-                gap: cardsPerView === 1 ? "0px" : "24px",
-              }}
-            >
-              {projectsData.map((project) => (
-                <div
-                  key={project.id}
-                  className="flex-shrink-0"
-                  style={{
-                    width:
-                      cardsPerView === 1
-                        ? "100%"
-                        : cardsPerView === 2
-                        ? "calc((100% - 24px) / 2)"
-                        : "calc((100% - 48px) / 3)",
-                  }}
-                >
-                  <ProjectCard project={project} />
+      {/* Content wrapper with relative positioning */}
+      <div className="relative z-10 w-full flex flex-col items-center gap-16">
+        <div className=" px-4 py-8 rounded-lg ">
+          <div className="flex flex-col items-center gap-4 max-w-4xl mx-auto text-center ">
+            <h2 className="text-4xl font-bold tracking-[-0.4px] text-gray-100">
+              Our Featured Projects
+            </h2>
+            <p className="text-xl text-gray-300 mb-8">
+              Explore Our Highlighted Projects That Reflect Our Identity
+            </p>
+          </div>
+
+          <div className="relative w-full max-w-[1800px] mx-auto rounded-xl -mt-6">
+            <div className="overflow-hidden px-4 py-6">
+              <div
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{
+                  transform: `translateX(-${
+                    currentIndex * (100 / cardsPerView)
+                  }%)`,
+                  gap:
+                    cardsPerView === 1
+                      ? "0px"
+                      : cardsPerView === 4
+                      ? "24px"
+                      : "24px",
+                }}
+              >
+                {projectsData.map((project) => (
+                  <div
+                    key={project.id}
+                    className="flex-shrink-0"
+                    style={{
+                      width:
+                        cardsPerView === 1
+                          ? "100%"
+                          : cardsPerView === 2
+                          ? "calc((100% - 24px) / 2)"
+                          : cardsPerView === 4
+                          ? "calc((100% - 72px) / 4)"
+                          : "calc((100% - 48px) / 3)",
+                    }}
+                  >
+                    <ProjectCard project={project} />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Buttons */}
+            <div className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between px-4">
+              <button
+                onClick={prevSlide}
+                disabled={isAnimating}
+                className="w-[50px] h-[50px] rounded-full bg-primary hover:bg-primary/70 flex items-center justify-center transform rotate-270 cursor-pointer"
+              >
+                <div className="text-white">
+                  <svg
+                    width="16"
+                    height="19"
+                    viewBox="0 0 16 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 1.66699V17.0003M8 1.66699L1.33334 8.33366M8 1.66699L14.6667 8.33366"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </div>
+              </button>
+              <button
+                onClick={nextSlide}
+                disabled={isAnimating}
+                className="w-[50px] h-[50px] rounded-full bg-primary hover:bg-primary/70 flex items-center justify-center transform -rotate-270 cursor-pointer"
+              >
+                <div className="text-white">
+                  <svg
+                    width="16"
+                    height="19"
+                    viewBox="0 0 16 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 1.66699V17.0003M8 1.66699L1.33334 8.33366M8 1.66699L14.6667 8.33366"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+            {/* Carousel Indicators */}
+            <div className="flex justify-center mt-8 gap-3">
+              {Array.from({
+                length: Math.max(1, projectsData.length - cardsPerView + 1),
+              }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  disabled={isAnimating}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ease-in-out hover:scale-125 active:scale-90 cursor-pointer ${
+                    currentIndex === index
+                      ? "bg-rose-700 shadow-lg scale-110"
+                      : isAnimating
+                      ? "bg-rose-700/30 cursor-not-allowed"
+                      : "bg-rose-700/30 hover:bg-rose-700/70"
+                  }`}
+                />
               ))}
             </div>
-          </div>
-
-          {/* Navigation Buttons */}
-          <div className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between px-4">
-            <button
-              onClick={prevSlide}
-              disabled={isAnimating}
-              className="w-[50px] h-[50px] rounded-full bg-primary hover:bg-primary/70 flex items-center justify-center transform rotate-270 cursor-pointer"
-            >
-              <div className="text-white">
-                <svg
-                  width="16"
-                  height="19"
-                  viewBox="0 0 16 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 1.66699V17.0003M8 1.66699L1.33334 8.33366M8 1.66699L14.6667 8.33366"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-            <button
-              onClick={nextSlide}
-              disabled={isAnimating}
-              className="w-[50px] h-[50px] rounded-full bg-primary hover:bg-primary/70 flex items-center justify-center transform -rotate-270 cursor-pointer"
-            >
-              <div className="text-white">
-                <svg
-                  width="16"
-                  height="19"
-                  viewBox="0 0 16 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 1.66699V17.0003M8 1.66699L1.33334 8.33366M8 1.66699L14.6667 8.33366"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-
-          {/* Carousel Indicators */}
-          <div className="flex justify-center mt-8 gap-3">
-            {Array.from({
-              length: Math.max(1, projectsData.length - cardsPerView + 1),
-            }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                disabled={isAnimating}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ease-in-out hover:scale-125 active:scale-90 cursor-pointer ${
-                  currentIndex === index
-                    ? "bg-rose-700 shadow-lg scale-110"
-                    : isAnimating
-                    ? "bg-rose-700/30 cursor-not-allowed"
-                    : "bg-rose-700/30 hover:bg-rose-700/70"
-                }`}
-              />
-            ))}
           </div>
         </div>
       </div>

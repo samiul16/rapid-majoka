@@ -175,7 +175,7 @@ const ClientTestimonials = () => {
         </p>
       </div>
 
-      <div className="relative w-full max-w-[1600px] mx-auto rounded-xl -mt-6">
+      <div className="relative w-full max-w-[1800px] mx-auto rounded-xl -mt-6">
         <div className="overflow-hidden px-4 py-6 ">
           <div
             className="flex transition-transform duration-500 ease-in-out"

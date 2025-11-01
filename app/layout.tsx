@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${anekMalayalam.variable} ${anekMalayalam.variable} antialiased bg-white`}
+        className={`${anekMalayalam.variable} ${anekMalayalam.variable} antialiased bg-white overflow-x-hidden!`}
       >
         <Navbar />
         {children}

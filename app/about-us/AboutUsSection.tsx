@@ -18,7 +18,7 @@ const AboutUsSection = () => {
 
   return (
     <div className="bg-white py-16 md:py-24">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[120px]">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
           {/* Left Content Section */}
           <div

@@ -112,7 +112,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 transition-all duration-300 py-3 ${styles.navBg} hover:bg-white group`}
       style={{ zIndex: 9998 }}
     >
-      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-16">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -209,18 +209,6 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <Link
-                href="/about-us"
-                className={`${
-                  pathname === "/about-us"
-                    ? styles.activeColor
-                    : styles.textColor
-                } ${
-                  styles.hoverColor
-                } font-semibold transition-colors text-lg font-anek`}
-              >
-                About
-              </Link>
             </div>
           </div>
 
@@ -293,7 +281,7 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <Link
-              href="/book-meeting"
+              href="/services"
               className={`w-44 h-10 px-5 py-3 ${
                 isHomePage
                   ? "bg-pink-950  hover:bg-pink-900 "

@@ -4,7 +4,7 @@ import Image from "next/image";
 const JoinTeam = () => {
   return (
     <div className="relative bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto py-10">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content Section */}
           <div className="order-2 lg:order-1">

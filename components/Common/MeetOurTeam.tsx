@@ -150,7 +150,7 @@ const WorkSteps = () => {
         </button>
 
         {/* Team Members Grid */}
-        <div className="px-4 max-w-[1600px] mx-auto">
+        <div className="px-4 max-w-[1800px] mx-auto">
           <div
             className={`grid gap-6 md:gap-[30px] transition-all duration-500 ${
               itemsToShow === 1

@@ -3,7 +3,7 @@ import Image from "next/image";
 const OurMission = () => {
   return (
     <div className="bg-white py-16 md:py-24">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[120px]">
+      <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         <div className="relative flex flex-col lg:flex-row items-center">
           {/* Image Section - Left side */}
           <div
@@ -23,7 +23,7 @@ const OurMission = () => {
 
           {/* Content Card - Overlapping on the right */}
           <div
-            className="w-full lg:w-[50%] lg:-ml-[10%] relative z-20 mt-8 lg:mt-0"
+            className="w-full lg:w-[50%] lg:-ml-[15%] relative z-20 mt-8 lg:mt-0"
             data-aos="fade-left"
             data-aos-delay="200"
           >

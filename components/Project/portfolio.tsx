@@ -96,7 +96,7 @@ const Portfolio = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Header Section */}
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mb-6">
@@ -127,67 +127,77 @@ const Portfolio = () => {
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
 
-                {/* Dark Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                {/* Hover Overlay - Only appears on hover */}
+                <div className="absolute inset-0 bg-gradient-to-b from-pink-950/0 to-pink-950/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-between p-6">
+                  {/* Contract Number - Top Right */}
+                  <div className="flex justify-end">
+                    {/* <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2">
+                      <span className="text-white text-sm font-bold">
+                        {project.contractNo}
+                      </span>
+                    </div> */}
+                  </div>
 
-                {/* Contract Number - Top Right */}
-                <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1">
-                  <span className="text-white text-sm font-semibold">
-                    {project.contractNo}
-                  </span>
-                </div>
+                  {/* Project Details - Full Overlay */}
+                  <div className="text-white space-y-3">
+                    {/* Contract No */}
+                    <div className="flex justify-between items-start">
+                      <span className="text-white text-sm font-medium">
+                        Contract No.:
+                      </span>
+                      <span className="text-white text-sm font-bold text-right">
+                        {project.contractNo}
+                      </span>
+                    </div>
 
-                {/* Project Details - Bottom Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <div className="space-y-3">
                     {/* Contract Title */}
-                    <div>
-                      <span className="block text-white/80 text-base font-semibold mb-1">
+                    <div className="flex justify-between items-start">
+                      <span className="text-white text-sm font-medium">
                         Contract Title:
                       </span>
-                      <span className="text-white text-sm font-semibold leading-tight line-clamp-2">
+                      <span className="text-white text-sm font-bold text-right max-w-[60%] leading-tight">
                         {project.contractTitle}
                       </span>
                     </div>
 
-                    {/* Location and Client */}
-                    <div className="grid grid-cols-2 gap-4">
-                      <div>
-                        <span className="block text-white/80 text-base font-semibold mb-1">
-                          Location:
-                        </span>
-                        <span className="text-white text-sm font-semibold">
-                          {project.location}
-                        </span>
-                      </div>
-                      <div>
-                        <span className="block text-white/80 text-base font-semibold mb-1">
-                          Client:
-                        </span>
-                        <span className="text-white text-sm font-semibold">
-                          {project.client}
-                        </span>
-                      </div>
+                    {/* Location */}
+                    <div className="flex justify-between items-start">
+                      <span className="text-white text-sm font-medium">
+                        Location:
+                      </span>
+                      <span className="text-white text-sm font-bold text-right">
+                        {project.location}
+                      </span>
                     </div>
 
-                    {/* Start & End Date and Status */}
-                    <div className="grid grid-cols-2 gap-4">
-                      <div>
-                        <span className="block text-white/80 text-base font-semibold mb-1">
-                          Start & End Date:
-                        </span>
-                        <span className="text-white text-sm font-semibold">
-                          {project.startEndDate}
-                        </span>
-                      </div>
-                      <div>
-                        <span className="block text-white/80 text-base font-semibold mb-1">
-                          Status:
-                        </span>
-                        <span className="text-white text-sm font-semibold">
-                          {project.status}
-                        </span>
-                      </div>
+                    {/* Client */}
+                    <div className="flex justify-between items-start">
+                      <span className="text-white text-sm font-medium">
+                        Client:
+                      </span>
+                      <span className="text-white text-sm font-bold text-right">
+                        {project.client}
+                      </span>
+                    </div>
+
+                    {/* Start & End Date */}
+                    <div className="flex justify-between items-start">
+                      <span className="text-white text-sm font-medium">
+                        Start & End Date:
+                      </span>
+                      <span className="text-white text-sm font-bold text-right">
+                        {project.startEndDate}
+                      </span>
+                    </div>
+
+                    {/* Status */}
+                    <div className="flex justify-between items-start">
+                      <span className="text-white text-sm font-medium">
+                        Status:
+                      </span>
+                      <span className="text-white text-sm font-bold text-right">
+                        {project.status}
+                      </span>
                     </div>
                   </div>
                 </div>

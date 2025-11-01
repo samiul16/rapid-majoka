@@ -17,7 +17,7 @@ const GetStarted = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-16 flex flex-col lg:flex-row justify-between items-start ">
+      <div className="relative z-10 max-w-8xl mx-auto px-4 py-16 flex flex-col lg:flex-row justify-between items-start ">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 px-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-[-0.4px]">

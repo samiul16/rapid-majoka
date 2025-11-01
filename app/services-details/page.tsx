@@ -160,7 +160,7 @@ const Services = () => {
         imagePath="/about-us/about-us-1.png"
       />
       <div className="w-full min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Sidebar */}
             <div className="w-full lg:w-96 flex flex-col gap-6">
@@ -307,7 +307,7 @@ const Services = () => {
             <div className="flex-1 flex flex-col gap-8">
               {/* Hero Image */}
               <div
-                className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-[40px] overflow-hidden relative"
+                className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] 2xl:h-[600px] rounded-[40px] overflow-hidden relative"
                 data-aos="fade-left"
               >
                 <Image

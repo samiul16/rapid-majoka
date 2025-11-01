@@ -28,7 +28,7 @@ export default function Footer() {
         style={{ backgroundImage: "url('/footer/footer-bg.png')" }}
       />
 
-      <div className="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-16 py-6">
+      <div className="relative max-w-8xl mx-auto px-4 sm:px-6 lg:px-16 py-6">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Company Info Section - Column 1 */}
@@ -159,7 +159,7 @@ export default function Footer() {
               Resources
             </h3>
             <ul className="space-y-3 flex-grow">
-              <li>
+              {/* <li>
                 <Link
                   href="/media"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
@@ -167,7 +167,7 @@ export default function Footer() {
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
                   Media
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/blogs"
@@ -195,7 +195,7 @@ export default function Footer() {
             <ul className="space-y-3 flex-grow">
               <li>
                 <Link
-                  href="/services"
+                  href="/services-details"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
@@ -204,7 +204,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/services-details"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
@@ -213,7 +213,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/services-details"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
@@ -222,7 +222,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/services-details"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
@@ -231,7 +231,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/services-details"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />

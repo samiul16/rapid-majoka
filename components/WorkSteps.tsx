@@ -27,7 +27,7 @@ export default function WorkSteps() {
 
   return (
     <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
-      <div className="max-w-[1600px] mx-auto">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-stone-900 mb-4">
@@ -85,7 +85,7 @@ export default function WorkSteps() {
                 {/* Connecting Line - Hidden on mobile, visible on larger screens */}
                 {index < steps.length - 1 && (
                   <div
-                    className="hidden lg:block absolute top-[95px] left-0 w-full h-[2px] bg-stone-400 transform translate-x-1/2"
+                    className="hidden lg:block absolute top-[85%] left-0 w-full h-[2px] bg-stone-400 transform translate-x-1/2"
                     style={{
                       background:
                         "repeating-linear-gradient(to right, #9ca3af 0, #9ca3af 8px, transparent 8px, transparent 16px)",
