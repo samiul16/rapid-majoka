@@ -105,10 +105,7 @@ export async function POST(request: NextRequest) {
                 <span class="value"><a href="mailto:${email}">${email}</a></span>
               </div>
               
-              <div class="field">
-                <span class="label">Description:</span>
-                <span class="value">${description}</span>
-              </div>
+            
               
               <div class="field">
                 <span class="label">Message:</span>
@@ -133,7 +130,6 @@ New Contact Form Submission
 Full Name: ${fullName}
 Phone: ${phone}
 Email: ${email}
-Description: ${description}
 
 Message:
 ${message}

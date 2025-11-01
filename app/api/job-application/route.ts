@@ -122,8 +122,6 @@ export async function POST(request: NextRequest) {
         <body>
           <div class="container">
             <div class="header">
-              <h1>🚗 New Job Application</h1>
-              <p style="margin: 10px 0 0 0; opacity: 0.9;">Rent A Car - Career Portal</p>
             </div>
             <div class="content">
               <div class="job-title">
