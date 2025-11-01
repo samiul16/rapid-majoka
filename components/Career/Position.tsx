@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 interface JobPosition {
@@ -12,6 +14,7 @@ interface JobPosition {
 }
 
 const Position = () => {
+  const router = useRouter();
   const jobPositions: JobPosition[] = [
     {
       id: 1,
@@ -110,7 +113,10 @@ const Position = () => {
 
               {/* Apply Button */}
               <div className="flex-shrink-0">
-                <button className="bg-red-900 hover:bg-red-800 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 shadow-lg cursor-pointer">
+                <button
+                  className="bg-red-900 hover:bg-red-800 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 shadow-lg cursor-pointer"
+                  onClick={() => router.push(`/career/${job.id}`)}
+                >
                   Apply Now
                 </button>
               </div>
