@@ -11,7 +11,7 @@ export default function ContactPage() {
       <CommonHeader
         title="Contact Us to Start Your Project"
         breadcrumb="Contact"
-        imagePath="/project.jpg"
+        imagePath="/contact.jpeg"
       />
       <Contact />
       <Map />
