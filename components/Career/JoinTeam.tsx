@@ -24,9 +24,9 @@ const JoinTeam = () => {
               become part of a dynamic and growing company that values your
               skills and aspirations.
             </p>
-            <button className="bg-primary hover:bg-primary/80 text-white font-semibold py-4 px-8 rounded-full transition-colors duration-300 shadow-lg cursor-pointer">
+            {/* <button className="bg-primary hover:bg-primary/80 text-white font-semibold py-4 px-8 rounded-full transition-colors duration-300 shadow-lg cursor-pointer">
               Join Our Core Team
-            </button>
+            </button> */}
           </div>
 
           {/* Right Image Section */}
