@@ -45,8 +45,8 @@ export default function ContactPage() {
       id: 1,
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 000-0000",
-      link: "tel:+15550000000",
+      content: "+971 56 20 15 468",
+      link: "tel:+971562015468",
     },
     {
       id: 2,
@@ -59,8 +59,8 @@ export default function ContactPage() {
       id: 3,
       icon: MapPin,
       title: "Location",
-      content: "Your City, Country",
-      link: "https://maps.google.com/?q=Your+City+Country",
+      content: "Mecca, Saudi Arabia",
+      link: "https://maps.google.com/?q=Mecca+Saudi+Arabia",
     },
   ];
 

@@ -46,7 +46,8 @@ export default function MapSection() {
           shadowSize: [41, 41],
         });
 
-        const position: [number, number] = [25.3463, 55.4209];
+        // Mecca, Saudi Arabia coordinates
+        const position: [number, number] = [21.4225, 39.8262];
 
         // Map control component to handle centering
         const MapController = ({
@@ -102,19 +103,19 @@ export default function MapSection() {
                 <Marker position={position} icon={redIcon}>
                   <Popup className="custom-popup">
                     <div className="p-2">
-                      <h3 className="font-bold text-lg mb-2">ADMS Office</h3>
+                      <h3 className="font-bold text-lg mb-2">
+                        Majoka Engineering
+                      </h3>
                       <p className="text-sm text-gray-600 mb-2">
-                        Al Majaz Jamal Abdul Nasser Street
+                        Mecca
                         <br />
-                        Ground Floor (G-1)
-                        <br />
-                        Sharjah, UAE
+                        Saudi Arabia
                       </p>
                       <div className="text-sm">
+                        <p className="font-semibold">Phone: +966 XX XXX XXXX</p>
                         <p className="font-semibold">
-                          Phone: +971 (02) 633 0660
+                          Email: info@majokaengineering.com
                         </p>
-                        <p className="font-semibold">Email: info@admsuae.com</p>
                       </div>
                     </div>
                   </Popup>
@@ -122,20 +123,20 @@ export default function MapSection() {
               </MapContainer>
 
               {/* Info Card Overlay - Top Left */}
-              <div className="absolute top-2 left-2 z-10 bg-white rounded-lg shadow-lg border border-gray-200 p-4 max-w-xs">
+              <div className="absolute top-2 left-2 z-10 bg-[#EDE8E9] rounded-lg shadow-lg border border-gray-300 p-4 max-w-xs">
                 <div className="flex items-start justify-between mb-3">
                   <h3 className="text-lg font-bold text-gray-900">
-                    1 Building
+                    Our Office
                   </h3>
 
                   {/* direction for moving map */}
                   <button
                     onClick={handleCenterToMarker}
-                    className="p-2 bg-blue-50 hover:bg-blue-100 rounded-full transition-colors duration-200 group"
+                    className="p-2 bg-white hover:bg-red-50 rounded-full transition-colors duration-200 group border border-gray-300"
                     title="Center map on location"
                   >
                     <svg
-                      className="w-4 h-4 text-blue-600 group-hover:text-blue-700"
+                      className="w-4 h-4 text-red-900 group-hover:text-red-800"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -156,17 +157,17 @@ export default function MapSection() {
                   </button>
                 </div>
 
-                <div className="text-sm text-gray-600 mb-3 leading-relaxed">
-                  <p>1 Building · 2 Jamal Abdul Naser St ·</p>
-                  <p>Al Majaz 2 · Al Majaz · Sharjah ·</p>
-                  <p>United Arab Emirates</p>
+                <div className="text-sm text-gray-700 mb-3 leading-relaxed">
+                  <p className="font-semibold">Majoka Engineering</p>
+                  <p>Mecca</p>
+                  <p>Saudi Arabia</p>
                 </div>
 
                 <button
                   onClick={handleViewLargerMap}
-                  className="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors cursor-pointer"
+                  className="text-red-900 hover:text-red-800 text-sm font-semibold transition-colors cursor-pointer"
                 >
-                  View larger map
+                  View larger map →
                 </button>
               </div>
             </div>
@@ -186,18 +187,18 @@ export default function MapSection() {
     <div className="w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 mb-20">
         {/* Header */}
-        {/* <div className="text-center mb-12">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Find Us On Map
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Visit our office location in Sharjah, UAE. We&apos;re conveniently
-            located and easily accessible.
+            Visit our office location in Mecca, Saudi Arabia. We&apos;re here to
+            serve you with excellence.
           </p>
-        </div> */}
+        </div>
 
         {/* Map Container */}
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           {MapComponent ? (
             <MapComponent />
           ) : (
