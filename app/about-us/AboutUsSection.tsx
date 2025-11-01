@@ -37,9 +37,9 @@ const AboutUsSection = () => {
               Excellence in Engineering
             </h2>
             <p className="text-justify text-stone-600 text-base sm:text-lg lg:text-2xl font-normal leading-7 sm:leading-8 lg:leading-9">
-              At SMITS, our commitment to excellence extends beyond technical
+              At Majoka, our commitment to excellence extends beyond technical
               expertise to encompass exceptional customer service and unwavering
-              integrity. When you choose SMITS, you’re choosing a trusted ally
+              integrity. When you choose Majoka, you’re choosing a trusted ally
               dedicated to the success of your project and the safety of your
               community
             </p>

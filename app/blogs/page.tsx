@@ -46,55 +46,55 @@ const News = () => {
   const newsArticles: NewsArticle[] = [
     {
       id: 1,
-      title: "Leading Innovations in Civil Engineering.",
+      title: "Building the Future: Innovations in Civil Engineering",
       category: "Civil Engineering",
       excerpt:
-        "The U.S. fintech sector alone generated over $39 billion in revenue in 2023, which is expected to grow to $70.5…",
+        "Explore the latest technologies and methods transforming civil engineering projects — from sustainable materials to smart infrastructure solutions.",
       image: "/news/news-1.png",
       date: "Mar 12, 2023",
     },
     {
       id: 2,
-      title: "Leading Innovations in Civil Engineering.",
+      title: "Strength and Safety: Best Practices in Civil Engineering",
       category: "Civil Engineering",
       excerpt:
-        "The U.S. fintech sector alone generated over $39 billion in revenue in 2023, which is expected to grow to $70.5…",
+        "Learn how modern engineering practices ensure structural integrity, safety, and long-lasting performance in large-scale civil projects.",
       image: "/news/news-2.png",
       date: "Mar 12, 2023",
     },
     {
       id: 3,
-      title: "Development Firms Shaping the Future of Architecture",
+      title: "Designing Spaces: Trends in Modern Architecture",
       category: "Architectural",
       excerpt:
-        "The U.S. fintech sector alone generated over $39 billion in revenue in 2023, which is expected to grow to $70.5…",
+        "Discover how innovative design, functionality, and sustainability are shaping the architecture of tomorrow.",
       image: "/news/news-3.png",
       date: "Mar 12, 2023",
     },
     {
       id: 4,
-      title: "The Best Architectural Design Reveals",
+      title: "Blending Form and Function: Architectural Excellence",
       category: "Architectural",
       excerpt:
-        "The U.S. fintech sector alone generated over $39 billion in revenue in 2023, which is expected to grow to $70.5…",
+        "A deep dive into projects where aesthetics meet practicality, highlighting the importance of planning, design, and creativity.",
       image: "/news/news-4.png",
       date: "Mar 12, 2023",
     },
     {
       id: 5,
-      title: "Top 20 Fintech Software Development Companies (2025)",
+      title: "Driving Efficiency: Modern Construction Techniques",
       category: "Construction Industries",
       excerpt:
-        "The U.S. fintech sector alone generated over $39 billion in revenue in 2023, which is expected to grow to $70.5…",
+        "Explore how technology, project management, and skilled teams are revolutionizing construction workflows and timelines.",
       image: "/news/news-1.png",
       date: "Mar 12, 2023",
     },
     {
       id: 6,
-      title: "Top 20 Fintech Software Development Companies (2025)",
+      title: "Sustainability in Construction: Building a Greener Future",
       category: "Construction Industries",
       excerpt:
-        "The U.S. fintech sector alone generated over $39 billion in revenue in 2023, which is expected to grow to $70.5…",
+        " Learn how eco-friendly materials, energy-efficient designs, and responsible practices are reshaping the construction industry.",
       image: "/news/news-2.png",
       date: "Mar 12, 2023",
     },
@@ -125,10 +125,9 @@ const News = () => {
               Explore Our Blogs
             </h2>
             <p className="text-lg text-gray-900/80 max-w-4xl mx-auto">
-              Successfully delivered six significant construction and
-              infrastructure projects for Saudi Aramco and SCECO, amounting to
-              SR 18 million, all completed on schedule in Dhahran, Jubail, and
-              Rastanura.
+              Insights, tips, and stories from the world of engineering — stay
+              updated with the latest trends, innovative solutions, and expert
+              advice from Majoka Engineering.
             </p>
           </div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
@@ -256,7 +255,7 @@ const News = () => {
                     className="bg-white rounded-3xl outline outline-1 outline-offset-[-1px] outline-stone-400 p-6 hover:shadow-xl transition-all duration-300 group cursor-pointer"
                     data-aos="fade-up"
                     data-aos-delay={index * 100}
-                    onClick={() => handleCardClick(article.id)}
+                    // onClick={() => handleCardClick(article.id)}
                   >
                     <div className="relative h-60 rounded-xl overflow-hidden mb-6">
                       <Image
@@ -286,7 +285,7 @@ const News = () => {
                           className="flex items-center gap-2 group/btn"
                           onClick={(e) => {
                             e.stopPropagation();
-                            handleCardClick(article.id);
+                            // handleCardClick(article.id);
                           }}
                         >
                           <span className="text-stone-900 text-lg font-medium underline group-hover/btn:text-pink-950 transition-colors">
