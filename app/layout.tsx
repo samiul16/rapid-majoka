@@ -43,7 +43,7 @@ export default function RootLayout({
         {/* Global WhatsApp Button - Bottom Right */}
         <div className="fixed bottom-6 right-6 z-50">
           <a
-            href="https://wa.me/966505176100"
+            href="https://wa.me/9660503010184"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center space-y-2 transition-all duration-300"
@@ -63,9 +63,9 @@ export default function RootLayout({
             </div>
 
             {/* Phone Number - Always Visible */}
-            <div className="bg-black/20 backdrop-blur-sm text-white px-4 py-1 rounded-lg text-base font-semibold shadow-lg border border-white/10">
-              +966 50 517 6100
-            </div>
+            {/* <div className="bg-black/20 backdrop-blur-sm text-white px-4 py-1 rounded-lg text-base font-semibold shadow-lg border border-white/10">
+              +966-0503010184
+            </div> */}
           </a>
         </div>
       </body>

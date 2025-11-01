@@ -273,19 +273,19 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-white flex-shrink-0" />
                 <Link
-                  href="tel:+97156201546"
+                  href="tel:+9660503010184"
                   className="text-white text-base hover:text-red-300 transition-colors"
                 >
-                  +971 56 20 15 468
+                  +966-0503010184
                 </Link>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-white flex-shrink-0" />
                 <Link
-                  href="mailto:info@majokaengineering.com"
+                  href="mailto:info@smits-limited.com"
                   className="text-white text-base hover:text-red-300 transition-colors break-all"
                 >
-                  info@majokaengineering.com
+                  info@smits-limited.com
                 </Link>
               </div>
             </div>

@@ -219,10 +219,10 @@ const News = () => {
                     We are always available to discuss with you
                   </p>
                   <a
-                    href="mailto:Info@majokaengineering.com"
+                    href="mailto:info@smits-limited.com"
                     className="text-black text-lg font-medium hover:text-sky-500 transition-colors duration-300 break-all text-center"
                   >
-                    Info@majokaengineering.com
+                    info@smits-limited.com
                   </a>
                   <button
                     className="px-4 py-2 bg-pink-950 rounded-[50px] outline-1 outline-offset-[-1px] hover:bg-pink-900 transition-all duration-300 flex items-center gap-2 shadow-lg cursor-pointer"

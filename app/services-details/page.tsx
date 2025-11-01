@@ -278,10 +278,10 @@ const Services = () => {
                     We are always available to discuss with you
                   </p>
                   <a
-                    href="mailto:Info@rapidsmarterp.com"
+                    href="mailto:info@smits-limited.com"
                     className="text-black text-lg font-medium hover:text-pink-950 transition-colors duration-300 break-all text-center"
                   >
-                    Info@rapidsmarterp.com
+                    info@smits-limited.com
                   </a>
                   <button
                     className="px-6 py-3 bg-pink-950 rounded-[50px] shadow-[2px_3px_4px_0px_rgba(0,0,0,0.15)] outline outline-1 outline-offset-[-1px] outline-pink-950 hover:bg-pink-900 transition-all duration-300 flex items-center gap-3 cursor-pointer"

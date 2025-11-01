@@ -39,10 +39,10 @@ const GetStarted = () => {
               <div className="flex flex-col">
                 <h4 className="text-xl font-medium text-white">Email</h4>
                 <a
-                  href="mailto:info@majokaengineering.com"
+                  href="mailto:info@smits-limited.com"
                   className="text-base font-medium text-white hover:underline"
                 >
-                  info@majokaengineering.com
+                  info@smits-limited.com
                 </a>
               </div>
             </div>
@@ -55,10 +55,10 @@ const GetStarted = () => {
               <div className="flex flex-col">
                 <h4 className="text-xl font-medium text-white">Phone</h4>
                 <a
-                  href="tel:+971 56 20 15 468"
+                  href="tel:+9660503010184"
                   className="text-base font-medium text-white hover:underline"
                 >
-                  +971 56 20 15 468
+                  +966-0503010184
                 </a>
               </div>
             </div>
