@@ -224,7 +224,10 @@ const News = () => {
                   >
                     Info@majokaengineering.com
                   </a>
-                  <button className="px-4 py-2 bg-pink-950 rounded-[50px] outline-1 outline-offset-[-1px] hover:bg-pink-900 transition-all duration-300 flex items-center gap-2 shadow-lg cursor-pointer">
+                  <button
+                    className="px-4 py-2 bg-pink-950 rounded-[50px] outline-1 outline-offset-[-1px] hover:bg-pink-900 transition-all duration-300 flex items-center gap-2 shadow-lg cursor-pointer"
+                    onClick={() => router.push("/contact")}
+                  >
                     <span className="text-indigo-50 text-base font-bold">
                       Contact Us
                     </span>

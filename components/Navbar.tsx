@@ -284,7 +284,7 @@ const Navbar = () => {
               href="/services"
               className={`w-44 h-10 px-5 py-3 ${
                 isHomePage
-                  ? "bg-pink-950  hover:bg-pink-900 "
+                  ? "bg-pink-950  hover:bg-pink-900"
                   : "bg-pink-800  hover:bg-pink-950"
               } rounded-[30px] inline-flex justify-center items-center gap-2.5 transition-colors shadow`}
             >

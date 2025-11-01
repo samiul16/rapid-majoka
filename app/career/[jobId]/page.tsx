@@ -630,7 +630,7 @@ const JobApplicationPage = () => {
                   <motion.button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-4 bg-red-900 hover:bg-red-800 disabled:bg-red-300 text-white font-bold rounded-full transition-colors disabled:cursor-not-allowed flex items-center justify-center gap-2 text-lg shadow-lg"
+                    className="w-full py-4 bg-pink-950 hover:bg-pink-950 disabled:bg-red-300 text-white font-bold rounded-full transition-colors disabled:cursor-not-allowed flex items-center justify-center gap-2 text-lg shadow-lg"
                     whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                     whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                   >
