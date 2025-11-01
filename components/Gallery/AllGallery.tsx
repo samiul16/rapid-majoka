@@ -109,7 +109,7 @@ const AllGallery = () => {
         </div>
 
         {/* Load More Button */}
-        {visibleImages <= galleryImages.length && (
+        {/* {visibleImages <= galleryImages.length && (
           <div className="text-center">
             <button
               onClick={loadMoreImages}
@@ -118,7 +118,7 @@ const AllGallery = () => {
               Load More
             </button>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

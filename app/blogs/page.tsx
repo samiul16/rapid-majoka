@@ -433,7 +433,10 @@ const News = () => {
                     towards your goals and beyond.
                   </p>
                   <div>
-                    <button className="px-6 py-3 bg-pink-950 rounded-[50px] outline outline-1 outline-offset-[-1px] outline-pink-950 hover:bg-pink-900 transition-all duration-300 flex items-center gap-2 group cursor-pointer">
+                    <button
+                      className="px-6 py-3 bg-pink-950 rounded-[50px] outline outline-1 outline-offset-[-1px] outline-pink-950 hover:bg-pink-900 transition-all duration-300 flex items-center gap-2 group cursor-pointer"
+                      onClick={() => router.push("/project")}
+                    >
                       <span className="text-white text-xl font-bold">
                         Let&apos;s Build Your Project
                       </span>

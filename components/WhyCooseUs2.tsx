@@ -179,7 +179,7 @@ const WhyChooseUsSection = () => {
 
           {/* CTA Button */}
           <motion.div variants={featureVariants}>
-            <Link href="/about">
+            <Link href="/about-us">
               <motion.button
                 className="px-8 sm:px-10 py-3 sm:py-4 bg-pink-950 hover:bg-pink-900 rounded-[30px] text-indigo-50 text-lg sm:text-xl font-bold transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
