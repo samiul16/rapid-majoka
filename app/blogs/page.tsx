@@ -255,7 +255,7 @@ const News = () => {
                 {filteredArticles.map((article, index) => (
                   <article
                     key={article.id}
-                    className="bg-white rounded-3xl outline outline-1 outline-offset-[-1px] outline-stone-400 p-6 hover:shadow-xl transition-all duration-300 group cursor-pointer"
+                    className="bg-white rounded-3xl outline outline-1 outline-offset-[-1px] outline-stone-200 p-6 hover:shadow-xl transition-all duration-300 group cursor-pointer"
                     data-aos="fade-up"
                     data-aos-delay={index * 100}
                     // onClick={() => handleCardClick(article.id)}
@@ -291,7 +291,7 @@ const News = () => {
                             // handleCardClick(article.id);
                           }}
                         >
-                          <span className="text-stone-900 text-lg font-medium underline group-hover/btn:text-pink-950 transition-colors">
+                          {/* <span className="text-stone-900 text-lg font-medium underline group-hover/btn:text-pink-950 transition-colors">
                             Continue to Reading
                           </span>
                           <svg
@@ -306,7 +306,7 @@ const News = () => {
                               strokeWidth={2}
                               d="M13 7l5 5m0 0l-5 5m5-5H6"
                             />
-                          </svg>
+                          </svg> */}
                         </button>
                         <time className="text-stone-500 text-base">
                           {article.date}
