@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const ConstructionMaterialsSection = () => {
   return (
@@ -36,10 +37,13 @@ const ConstructionMaterialsSection = () => {
               processes and ensure high-quality results.
             </p>
 
-            <button className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-900 rounded-full text-gray-900 font-semibold hover:bg-gray-900 hover:text-white transition-colors duration-300 self-start cursor-pointer">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-900 rounded-full text-gray-900 font-semibold hover:bg-gray-900 hover:text-white transition-colors duration-300 self-start cursor-pointer"
+            >
               View More
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
 
           {/* Card 2 - Project Management (with background image) */}
@@ -75,10 +79,13 @@ const ConstructionMaterialsSection = () => {
                 projects.
               </p>
 
-              <button className="inline-flex items-center gap-2 px-6 py-3 bg-red-900 rounded-full text-white font-semibold hover:bg-red-800 transition-colors duration-300 self-start cursor-pointer">
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-red-900 rounded-full text-white font-semibold hover:bg-red-800 transition-colors duration-300 self-start cursor-pointer"
+              >
                 Learn More
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -105,10 +112,13 @@ const ConstructionMaterialsSection = () => {
               can lead to smarter, safer buildings.
             </p>
 
-            <button className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-900 rounded-full text-gray-900 font-semibold hover:bg-gray-900 hover:text-white transition-colors duration-300 self-start cursor-pointer">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-900 rounded-full text-gray-900 font-semibold hover:bg-gray-900 hover:text-white transition-colors duration-300 self-start cursor-pointer"
+            >
               Learn More
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

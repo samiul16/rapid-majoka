@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,6 +20,7 @@ interface Service {
 
 const Services = () => {
   const [activeService, setActiveService] = useState(1);
+  const router = useRouter();
 
   useEffect(() => {
     AOS.init({
@@ -281,7 +283,10 @@ const Services = () => {
                   >
                     Info@rapidsmarterp.com
                   </a>
-                  <button className="px-6 py-3 bg-pink-950 rounded-[50px] shadow-[2px_3px_4px_0px_rgba(0,0,0,0.15)] outline outline-1 outline-offset-[-1px] outline-pink-950 hover:bg-pink-900 transition-all duration-300 flex items-center gap-3 cursor-pointer">
+                  <button
+                    className="px-6 py-3 bg-pink-950 rounded-[50px] shadow-[2px_3px_4px_0px_rgba(0,0,0,0.15)] outline outline-1 outline-offset-[-1px] outline-pink-950 hover:bg-pink-900 transition-all duration-300 flex items-center gap-3 cursor-pointer"
+                    onClick={() => router.push("/contact")}
+                  >
                     <span className="text-white text-base font-bold leading-normal">
                       Contact Us
                     </span>
