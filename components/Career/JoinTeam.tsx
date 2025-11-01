@@ -9,13 +9,20 @@ const JoinTeam = () => {
           {/* Left Content Section */}
           <div className="order-2 lg:order-1">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Build Your Future with Us: Careers in Construction
+              {/* Build Your Future with Us: Careers in Construction */}
+              Careers at SMITS
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Join our dynamic construction team and help us build a brighter
+              {/* Join our dynamic construction team and help us build a brighter
               future! At BuildRight, we strive to be the leading construction
               company, delivering exceptional projects and fostering talent.
-              Become part of our mission today!
+              Become part of our mission today! */}
+              At SMITS, we are committed to building not just structures, but
+              also careers. We are always on the lookout for talented and
+              passionate individuals who share our dedication to excellence,
+              innovation, and safety in civil construction. Join our team and
+              become part of a dynamic and growing company that values your
+              skills and aspirations.
             </p>
             <button className="bg-primary hover:bg-primary/80 text-white font-semibold py-4 px-8 rounded-full transition-colors duration-300 shadow-lg cursor-pointer">
               Join Our Core Team

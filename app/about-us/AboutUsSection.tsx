@@ -25,18 +25,23 @@ const AboutUsSection = () => {
             className="w-full lg:w-[570px] flex flex-col gap-7"
             data-aos="fade-right"
           >
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+            {/* <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
               <span className="text-stone-900">
                 Building a Brighter Future: Our Commitment to{" "}
               </span>
               <span className="text-red-900">Construction</span>
               <span className="text-stone-900"> Excellence</span>
+            </h2> */}
+
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-900">
+              Excellence in Engineering
             </h2>
             <p className="text-justify text-stone-600 text-base sm:text-lg lg:text-2xl font-normal leading-7 sm:leading-8 lg:leading-9">
-              We aim to be the world&apos;s most trusted ERP solutions provider,
-              raising the bar for technology and service excellence. Our goal is
-              to revolutionize business operations, helping them achieve
-              scalability, adaptability, and enduring success.
+              At SMITS, our commitment to excellence extends beyond technical
+              expertise to encompass exceptional customer service and unwavering
+              integrity. When you choose SMITS, you’re choosing a trusted ally
+              dedicated to the success of your project and the safety of your
+              community
             </p>
 
             {/* Download Button */}

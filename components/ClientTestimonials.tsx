@@ -89,27 +89,27 @@ const ClientTestimonials = () => {
   const testimonialsData: TestimonialData[] = [
     {
       id: 1,
-      name: "Stephanie Hutchkiss",
+      name: "Thomas smith, Francisco ",
       title: "Excellent Service! Car Rent Service",
       image: "/client/1.jpg",
       testimonial:
-        "I have been using Rentaly for my Car Rental needs for over 5 years now. I have never had any problems with their service. Their customer support is always responsive and helpful. I would recommend Rentaly to anyone looking for a reliable Car Rental provider",
+        "We are impressed by their ability to meet our specific needs and their strong customer service. We appreciated the high level of customer services.",
     },
     {
       id: 2,
-      name: "Michael Johnson",
+      name: "Stella Smith, New York",
       title: "Outstanding Experience! Premium Service",
       image: "/client/2.jpg",
       testimonial:
-        "Amazing experience with this car rental service! The vehicles are always clean, well-maintained, and the booking process is seamless. The staff is professional and goes above and beyond to ensure customer satisfaction.",
+        "Majoka Engineering delivered exactly what we expected — professional work, timely completion, and great communication from start to finish",
     },
     {
       id: 3,
-      name: "Sarah Williams",
+      name: "Ernest Smith, New York",
       title: "Reliable & Professional Service",
       image: "/client/3.jpg",
       testimonial:
-        "I've used many car rental services, but this one stands out for its reliability and professionalism. The cars are luxury vehicles in perfect condition, and the pricing is very competitive. Highly recommended!",
+        "Their technical expertise and dedication to quality truly set them apart. Every step of our project was handled with professionalism and care.",
     },
     {
       id: 4,

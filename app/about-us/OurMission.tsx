@@ -35,19 +35,19 @@ const OurMission = () => {
 
                 <div className="text-pink-950 text-sm sm:text-base space-y-4 leading-snug tracking-tight text-shadow-2xs">
                   <p>
-                    Our mission is to build innovative and sustainable
-                    structures that enhance communities and improve lives. We
-                    strive to deliver high-quality construction services that
-                    prioritize safety, efficiency, and environmental
-                    responsibility.
+                    At Majoka Engineering, our mission is to deliver innovative,
+                    reliable, and sustainable engineering solutions that empower
+                    industries and enhance communities. We strive to exceed
+                    client expectations through technical excellence, quality
+                    workmanship, and a strong commitment to safety, integrity,
+                    and customer satisfaction.
                   </p>
 
                   <p>
-                    Our vision is to be a leader in the construction industry,
-                    recognized for our commitment to excellence and integrity.
-                    We aim to redefine the construction experience by fostering
-                    collaboration, embracing new technologies, and creating
-                    spaces that inspire and endure.
+                    To be a leading engineering partner recognized for shaping a
+                    smarter, safer, and more sustainable future — where
+                    technology, expertise, and human values come together to
+                    build progress and trust across every project we undertake.
                   </p>
                 </div>
               </div>

@@ -250,8 +250,9 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-white flex-shrink-0 mt-1" />
                 <div className="text-white text-base leading-relaxed">
-                  <p>Fish Round About Deira,</p>
-                  <p>Dubai, UAE</p>
+                  {/* <p>Fish Round About Deira,</p>
+                  <p>Dubai, UAE</p> */}
+                  <p>Mecca, Saudi Arabia</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">

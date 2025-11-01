@@ -7,7 +7,7 @@ export default function Services() {
       id: 1,
       title: "Contracting",
       description:
-        "Majoka delivers high-quality contracting solutions, ensuring precision and reliability in every project.",
+        "SMITS delivers high-quality contracting solutions, ensuring precision and reliability in every project.",
       icon: "/landing/services/6.svg",
       featured: true,
     },
@@ -15,7 +15,7 @@ export default function Services() {
       id: 2,
       title: "Testing",
       description:
-        "Majoka delivers high-quality contracting solutions, ensuring precision and reliability in every project.",
+        "SMITS supplies high-quality materials and equipment through reliable trading services.",
       icon: "/landing/services/1.svg",
       featured: false,
     },
@@ -23,7 +23,7 @@ export default function Services() {
       id: 3,
       title: "Calibration",
       description:
-        "Majoka delivers high-quality contracting solutions, ensuring precision and reliability in every project.",
+        "SMITS offers precise calibration services to ensure equipment accuracy and reliability.",
       icon: "/landing/services/2.svg",
       featured: false,
     },
@@ -31,7 +31,7 @@ export default function Services() {
       id: 4,
       title: "Inspection",
       description:
-        "Majoka delivers high-quality contracting solutions, ensuring precision and reliability in every project.",
+        "SMITS conducts detailed inspections to assess structural integrity and ensure safety compliance.",
       icon: "/landing/services/3.svg",
       featured: false,
     },
@@ -39,7 +39,7 @@ export default function Services() {
       id: 5,
       title: "Trading",
       description:
-        "Majoka delivers high-quality contracting solutions, ensuring precision and reliability in every project.",
+        "SMITS supplies high-quality materials and equipment through reliable trading services.",
       icon: "/landing/services/4.svg",
       featured: false,
     },
@@ -47,7 +47,7 @@ export default function Services() {
       id: 6,
       title: "Hotel",
       description:
-        "Majoka delivers high-quality contracting solutions, ensuring precision and reliability in every project.",
+        "SMITS provides comfortable accommodations and exceptional service at our modern hotel.",
       icon: "/landing/services/5.svg",
       featured: false,
     },
