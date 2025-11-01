@@ -114,7 +114,7 @@ const Position = () => {
               {/* Apply Button */}
               <div className="flex-shrink-0">
                 <button
-                  className="bg-red-900 hover:bg-red-800 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 shadow-lg cursor-pointer"
+                  className="bg-pink-800 hover:bg-pink-900 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 shadow-lg cursor-pointer"
                   onClick={() => router.push(`/career/${job.id}`)}
                 >
                   Apply Now
