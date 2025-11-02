@@ -51,7 +51,7 @@ export default function Footer() {
             {/* Social Media Icons */}
             <div className="flex items-center gap-3 pt-2">
               <Link
-                href="#"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors duration-300"
@@ -69,7 +69,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5 text-white" />
               </Link>
               <Link
-                href="#"
+                href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors duration-300"
@@ -87,7 +87,7 @@ export default function Footer() {
                 <Youtube className="w-5 h-5 text-white" />
               </Link> */}
               <Link
-                href="#"
+                href="https://x.com/home"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors duration-300"

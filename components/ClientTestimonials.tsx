@@ -36,7 +36,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
         {/* Content */}
         <div className="absolute inset-0 z-20 p-6 flex flex-col justify-center">
           <div className="flex justify-between items-start mb-4">
-            <h3 className="text-xl mt-4 font-medium text-[#E9F5FB]">
+            <h3 className="text-xl mt-14 font-medium text-[#E9F5FB]">
               {testimonial.title}
             </h3>
             <Image
@@ -90,50 +90,50 @@ const ClientTestimonials = () => {
     {
       id: 1,
       name: "Thomas smith, Francisco ",
-      title: "Excellent Service! Car Rent Service",
-      image: "/client/1.jpg",
-      testimonial:
+      title:
         "We are impressed by their ability to meet our specific needs and their strong customer service. We appreciated the high level of customer services.",
+      image: "/client/1.jpg",
+      testimonial: "",
     },
     {
       id: 2,
       name: "Stella Smith, New York",
-      title: "Outstanding Experience! Premium Service",
+      title:
+        "Majoka Engineering delivered exactly what we expected — professional work, timely completion, and great communication from start to finish.",
       image: "/client/2.jpg",
-      testimonial:
-        "Majoka Engineering delivered exactly what we expected — professional work, timely completion, and great communication from start to finish",
+      testimonial: "",
     },
     {
       id: 3,
       name: "Ernest Smith, New York",
-      title: "Reliable & Professional Service",
-      image: "/client/3.jpg",
-      testimonial:
+      title:
         "Their technical expertise and dedication to quality truly set them apart. Every step of our project was handled with professionalism and care.",
+      image: "/client/3.jpg",
+      testimonial: "",
     },
     {
       id: 4,
       name: "David Brown",
-      title: "Top Quality Fleet & Service",
-      image: "/client/1.jpg",
-      testimonial:
+      title:
         "Exceptional service quality and an impressive fleet of vehicles. The booking process is straightforward, and the customer service team is always available to help. Will definitely use their services again.",
+      image: "/client/1.jpg",
+      testimonial: "",
     },
     {
       id: 5,
       name: "Emma Davis",
-      title: "Perfect for Business Travel",
-      image: "/client/2.jpg",
-      testimonial:
+      title:
         "As a frequent business traveler, I need reliable transportation. This service has never let me down. Professional drivers, clean vehicles, and always on time. Perfect for corporate needs.",
+      image: "/client/2.jpg",
+      testimonial: "",
     },
     {
       id: 6,
       name: "James Wilson",
-      title: "Luxury Cars, Great Prices",
-      image: "/client/3.jpg",
-      testimonial:
+      title:
         "Great selection of luxury vehicles at competitive prices. The staff is knowledgeable and helpful in choosing the right car for your needs. The entire experience from booking to return is smooth and professional.",
+      image: "/client/3.jpg",
+      testimonial: "",
     },
   ];
 

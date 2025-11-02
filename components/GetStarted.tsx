@@ -1,8 +1,25 @@
 "use client";
-import React from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import React, { useState } from "react";
+import { Mail, Phone, MapPin, ChevronDown } from "lucide-react";
 
 const GetStarted = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
+
+  const services = [
+    "Contracting",
+    "Testing",
+    "Calibration",
+    "Inspection",
+    "Trading",
+    "Hotel",
+  ];
+
+  const handleServiceSelect = (service: string) => {
+    setSelectedService(service);
+    setIsDropdownOpen(false);
+  };
+
   return (
     <div className="relative w-full min-h-[676px] overflow-hidden px-4 md:px-8 lg:px-16">
       {/* Background Image */}
@@ -71,7 +88,7 @@ const GetStarted = () => {
               <div className="flex flex-col">
                 <h4 className="text-xl font-medium text-white">Office</h4>
                 <p className="text-base font-medium text-white">
-                  Fish Round About Deira, Dubai, UAE
+                  Mecca, Saudi Arabia
                 </p>
               </div>
             </div>
@@ -110,22 +127,35 @@ const GetStarted = () => {
               </div>
 
               {/* Services Dropdown */}
-              <div className="w-full h-[50px] border border-[#e9f5fb] rounded-xl px-4 py-4 flex items-center justify-between">
-                <span className="text-[#e9f5fb] text-lg">Services</span>
-                <svg
-                  width="12"
-                  height="6"
-                  viewBox="0 0 12 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="stroke-[#e9f5fb] stroke-[1.5px]"
+              <div className="relative">
+                <div
+                  className="w-full h-[50px] border border-[#e9f5fb] rounded-xl px-4 py-4 flex items-center justify-between cursor-pointer"
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 >
-                  <path
-                    d="M1 1L6 5L11 1"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                  <span className="text-[#e9f5fb] text-lg">
+                    {selectedService || "Select Service"}
+                  </span>
+                  <ChevronDown
+                    className={`w-4 h-4 text-[#e9f5fb] transition-transform duration-200 ${
+                      isDropdownOpen ? "rotate-180" : ""
+                    }`}
                   />
-                </svg>
+                </div>
+
+                {/* Dropdown Menu */}
+                {isDropdownOpen && (
+                  <div className="absolute top-full left-0 right-0 mt-1 bg-white/90 backdrop-blur-md border border-gray-300 rounded-xl shadow-lg z-50 max-h-48 overflow-y-auto">
+                    {services.map((service, index) => (
+                      <div
+                        key={index}
+                        className="px-4 py-3 text-gray-800 hover:bg-gray-100/50 cursor-pointer transition-colors duration-150 first:rounded-t-xl last:rounded-b-xl"
+                        onClick={() => handleServiceSelect(service)}
+                      >
+                        {service}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Message Input */}

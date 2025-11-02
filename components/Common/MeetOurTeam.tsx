@@ -177,7 +177,7 @@ const WorkSteps = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-[#209bd7]/0 to-red-950 opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
 
                   {/* Social Icons - Show on hover */}
-                  <div className="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                  {/* <div className="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
                     <div className="flex gap-6 sm:gap-8 md:gap-10">
                       <a
                         href="#"
@@ -207,7 +207,7 @@ const WorkSteps = () => {
                         <Facebook className="w-5 h-5 sm:w-6 sm:h-6" />
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="flex flex-col gap-2">

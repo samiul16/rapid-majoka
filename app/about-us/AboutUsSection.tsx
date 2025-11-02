@@ -45,7 +45,7 @@ const AboutUsSection = () => {
             </p>
 
             {/* Download Button */}
-            <button
+            {/* <button
               className="mt-4 h-12 sm:h-14 px-6 sm:px-10 py-3 bg-pink-950 rounded-[30px] inline-flex justify-center items-center gap-3 hover:bg-pink-900 transition-colors cursor-pointer w-full sm:w-auto"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -54,7 +54,7 @@ const AboutUsSection = () => {
                 Download Company Profile
               </span>
               <Download className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-50" />
-            </button>
+            </button> */}
           </div>
 
           {/* Right Images Section */}

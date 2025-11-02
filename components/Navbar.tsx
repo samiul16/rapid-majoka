@@ -215,7 +215,7 @@ const Navbar = () => {
           {/* Right Side Controls */}
           <div className="hidden md:flex items-center space-x-6">
             {/* Language Selector with Flag */}
-            <div className="relative" ref={langRef}>
+            {/* <div className="relative" ref={langRef}>
               <button
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                 className="flex items-center space-x-2 rounded-full px-3 py-2 hover:bg-white/10 transition-colors cursor-pointer"
@@ -236,7 +236,6 @@ const Navbar = () => {
                 />
               </button>
 
-              {/* Language Dropdown */}
               {isLangDropdownOpen && (
                 <div className="absolute top-full right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
                   <button
@@ -277,11 +276,11 @@ const Navbar = () => {
                   </button>
                 </div>
               )}
-            </div>
+            </div> */}
 
             {/* CTA Button */}
             <Link
-              href="/services"
+              href="/contact"
               className={`w-44 h-10 px-5 py-3 ${
                 isHomePage
                   ? "bg-pink-950  hover:bg-pink-900"

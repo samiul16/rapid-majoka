@@ -181,7 +181,7 @@ const WhyChooseUsSection = () => {
           <motion.div variants={featureVariants}>
             <Link href="/about-us">
               <motion.button
-                className="px-8 sm:px-10 py-3 sm:py-4 bg-pink-950 hover:bg-pink-900 rounded-[30px] text-indigo-50 text-lg sm:text-xl font-bold transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="px-8 sm:px-10 py-3 sm:py-4 bg-pink-950 hover:bg-pink-900 rounded-[30px] text-indigo-50 text-lg sm:text-xl font-bold transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer my-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -202,16 +202,6 @@ const WhyChooseUsSection = () => {
             exit={{ opacity: 0 }}
             onClick={() => setIsVideoOpen(false)}
           >
-            {/* Close Button */}
-            <motion.button
-              className="absolute top-4 right-4 sm:top-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-colors z-10"
-              onClick={() => setIsVideoOpen(false)}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <X className="w-6 h-6 text-white" />
-            </motion.button>
-
             {/* Video Container */}
             <motion.div
               className="relative w-full max-w-5xl aspect-video"
@@ -220,9 +210,16 @@ const WhyChooseUsSection = () => {
               exit={{ scale: 0.9, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
             >
+              {/* Close Button - positioned relative to video */}
+              <button
+                onClick={() => setIsVideoOpen(false)}
+                className="absolute -top-12 -right-2 z-10 w-10 h-10 bg-red-500/90 hover:bg-red-400/90 rounded-full flex items-center justify-center text-white text-xl font-bold transition-all duration-200 cursor-pointer"
+              >
+                ×
+              </button>
               <iframe
                 className="w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"
+                src="https://www.youtube.com/embed/l55HVcMhVsE?autoplay=1"
                 title="Company Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

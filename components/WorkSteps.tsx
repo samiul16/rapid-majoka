@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import { X } from "lucide-react";
 
 export default function WorkSteps() {
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
+  const handlePlayVideo = () => {
+    setIsVideoModalOpen(true);
+  };
+
+  const closeVideoModal = () => {
+    setIsVideoModalOpen(false);
+  };
+
   const steps = [
     {
       id: 1,
@@ -47,10 +58,13 @@ export default function WorkSteps() {
 
             {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <button className="w-20 h-20 bg-pink-950/30 hover:bg-pink-950/80 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow cursor-pointer">
+              <button
+                onClick={handlePlayVideo}
+                className="w-20 h-20 bg-pink-950/30 hover:bg-pink-950/80 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow cursor-pointer"
+              >
                 <Image
                   src="/landing/work/2.svg"
-                  alt="Construction site with workers"
+                  alt="Play video"
                   height={30}
                   width={30}
                   className="object-cover h-20 w-auto"
@@ -97,6 +111,36 @@ export default function WorkSteps() {
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {isVideoModalOpen && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+          <div className="relative w-full max-w-4xl bg-white rounded-2xl overflow-hidden">
+            {/* Close Button */}
+            <button
+              onClick={closeVideoModal}
+              className="absolute top-4 right-4 z-10 w-10 h-10 bg-red-500/90 hover:bg-red-400/90 rounded-full flex items-center justify-center text-white transition-all duration-200 hover:scale-110 cursor-pointer"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {/* Video Container */}
+            <div
+              className="relative w-full"
+              style={{ paddingBottom: "56.25%" }}
+            >
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/mbwuj58UEPg?autoplay=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

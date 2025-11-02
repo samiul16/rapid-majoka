@@ -1,7 +1,15 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Services() {
+  const router = useRouter();
+
+  const handleReadMore = (serviceId: number) => {
+    router.push(`/services-details?service=${serviceId}`);
+  };
+
   const services = [
     {
       id: 1,
@@ -119,6 +127,7 @@ export default function Services() {
 
               {/* Read More Button */}
               <button
+                onClick={() => handleReadMore(service.id)}
                 className={`
                 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 cursor-pointer
                 ${service.featured ? " text-white " : " text-pink-950"}
