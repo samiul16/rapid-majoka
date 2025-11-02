@@ -10,6 +10,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
+import toast from "react-hot-toast";
 
 interface FormData {
   fullName: string;
@@ -90,11 +91,22 @@ export default function ContactPage() {
       const data = await response.json();
 
       if (response.ok) {
-        setSubmitStatus({
-          type: "success",
-          message:
-            "Thank you! Your message has been sent successfully. We'll get back to you soon.",
-        });
+        toast.success(
+          "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+          {
+            duration: 5000,
+            style: {
+              background: "#10b981",
+              color: "#fff",
+              padding: "16px",
+              borderRadius: "8px",
+            },
+            iconTheme: {
+              primary: "#fff",
+              secondary: "#10b981",
+            },
+          }
+        );
         // Reset form
         setFormData({
           fullName: "",
@@ -108,16 +120,34 @@ export default function ContactPage() {
           setSubmitStatus({ type: null, message: "" });
         }, 5000);
       } else {
-        setSubmitStatus({
-          type: "error",
-          message: data.error || "Failed to send message. Please try again.",
+        toast.error(data.error || "Failed to send message. Please try again.", {
+          duration: 5000,
+          style: {
+            background: "#ef4444",
+            color: "#fff",
+            padding: "16px",
+            borderRadius: "8px",
+          },
+          iconTheme: {
+            primary: "#fff",
+            secondary: "#ef4444",
+          },
         });
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      setSubmitStatus({
-        type: "error",
-        message: "An error occurred. Please try again later.",
+      toast.error("An error occurred. Please try again later.", {
+        duration: 5000,
+        style: {
+          background: "#ef4444",
+          color: "#fff",
+          padding: "16px",
+          borderRadius: "8px",
+        },
+        iconTheme: {
+          primary: "#fff",
+          secondary: "#ef4444",
+        },
       });
     } finally {
       setIsSubmitting(false);

@@ -18,6 +18,7 @@ import {
 import { useRouter, useParams } from "next/navigation";
 import Image from "next/image";
 import CommonHeader from "@/components/Common/CommonHeader";
+import { toast } from "react-hot-toast";
 
 interface Job {
   id: number;
@@ -261,11 +262,22 @@ const JobApplicationPage = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setSubmitStatus({
-          type: "success",
-          message:
-            "Thank you for your application! We have received your CV and will review it shortly. We'll contact you if your profile matches our requirements.",
-        });
+        toast.success(
+          "Thank you for your application! We have received your CV and will review it shortly. We'll contact you if your profile matches our requirements.",
+          {
+            duration: 5000,
+            style: {
+              background: "#10b981",
+              color: "#fff",
+              padding: "16px",
+              borderRadius: "8px",
+            },
+            iconTheme: {
+              primary: "#fff",
+              secondary: "#10b981",
+            },
+          }
+        );
         setFormData({
           fullName: "",
           email: "",
@@ -276,17 +288,37 @@ const JobApplicationPage = () => {
         });
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else {
-        setSubmitStatus({
-          type: "error",
-          message:
-            data.error || "Failed to submit application. Please try again.",
-        });
+        toast.error(
+          data.error || "Failed to submit application. Please try again.",
+          {
+            duration: 5000,
+            style: {
+              background: "#ef4444",
+              color: "#fff",
+              padding: "16px",
+              borderRadius: "8px",
+            },
+            iconTheme: {
+              primary: "#fff",
+              secondary: "#ef4444",
+            },
+          }
+        );
       }
     } catch (error) {
       console.error("Error submitting application:", error);
-      setSubmitStatus({
-        type: "error",
-        message: "An error occurred. Please try again later.",
+      toast.error("An error occurred. Please try again later.", {
+        duration: 5000,
+        style: {
+          background: "#ef4444",
+          color: "#fff",
+          padding: "16px",
+          borderRadius: "8px",
+        },
+        iconTheme: {
+          primary: "#fff",
+          secondary: "#ef4444",
+        },
       });
     } finally {
       setIsSubmitting(false);

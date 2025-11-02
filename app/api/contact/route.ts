@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
     console.log("Received request:");
     const body = await request.json();
     console.log("Received body:", body);
-    const { fullName, phone, email, description, message } = body;
+    const { fullName, phone, email, description, message, service } = body;
     console.log("Received body:", body);
 
     // Validate required fields
