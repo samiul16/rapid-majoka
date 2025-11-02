@@ -426,10 +426,10 @@ const Navbar = () => {
               Contact
             </Link>
             <Link
-              href="/about"
+              href="/about-us"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`${
-                pathname === "/about" ? "text-sky-400" : "text-white/80"
+                pathname === "/about-us" ? "text-sky-400" : "text-white/80"
               } hover:text-white font-semibold transition-colors text-xl py-2 font-anek`}
             >
               About
@@ -446,7 +446,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Language Selector */}
-          <div className="mt-8 mb-4">
+          {/* <div className="mt-8 mb-4">
             <div className="flex items-center space-x-3 px-3 py-2 bg-white/10 rounded-lg">
               <Image
                 src="https://flagcdn.com/w40/us.png"
@@ -459,7 +459,7 @@ const Navbar = () => {
                 English
               </span>
             </div>
-          </div>
+          </div> */}
 
           {/* Mobile Book Now Button */}
           <div>
