@@ -210,7 +210,7 @@ export default function Footer() {
             <ul className="space-y-3 flex-grow">
               <li>
                 <Link
-                  href="/services-details"
+                  href="/services-details?service=1"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
@@ -219,7 +219,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services-details"
+                  href="/services-details?service=2"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
@@ -228,7 +228,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services-details"
+                  href="/services-details?service=3"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
@@ -237,7 +237,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services-details"
+                  href="/services-details?service=4"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
@@ -246,7 +246,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services-details"
+                  href="/services-details?service=5"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />

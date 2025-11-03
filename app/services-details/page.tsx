@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,6 +21,7 @@ interface Service {
 const Services = () => {
   const [activeService, setActiveService] = useState(1);
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     AOS.init({
@@ -28,7 +29,16 @@ const Services = () => {
       once: true,
       easing: "ease-in-out",
     });
-  }, []);
+
+    // Get service ID from URL parameters
+    const serviceId = searchParams.get("service");
+    if (serviceId) {
+      const id = parseInt(serviceId);
+      if (id >= 1 && id <= 6) {
+        setActiveService(id);
+      }
+    }
+  }, [searchParams]);
 
   const servicesData: Service[] = [
     {
@@ -36,11 +46,11 @@ const Services = () => {
       name: "Contracting",
       title: "Contracting",
       description:
-        "Majoka provides extensive contracting services, executing top-notch construction and infrastructure projects. Our team guarantees accuracy, dependability, and compliance with safety regulations, fulfilling all project specifications.",
+        "Majoka Engineering provides extensive contracting services, executing top-notch construction and infrastructure projects across industrial, commercial, and residential sectors. Our expert engineers and project managers ensure accuracy, dependability, and compliance with safety regulations—fulfilling every client's vision on time and within budget.",
       highlights: [
-        "Expert Construction: Delivering roads, bridges, and buildings with precision.",
-        "Green Innovations: Pioneering sustainable materials and eco-friendly practices.",
-        "Smart Infrastructure: Integrating technology for enhanced urban living and safety.",
+        "Expert Construction: Roads, bridges, and high-rise buildings built with precision.",
+        "Green Innovations: Using eco-friendly materials and sustainable practices.",
+        "Smart Infrastructure: Integrating advanced technologies for safer, efficient cities.",
       ],
       services: [
         "Civil Work",
@@ -58,19 +68,17 @@ const Services = () => {
       name: "Testing",
       title: "Testing",
       description:
-        "Our comprehensive testing services ensure quality and safety standards are met across all projects. We utilize state-of-the-art equipment and methodologies to deliver accurate results.",
+        "Majoka Testing Division ensures that all materials, structures, and components meet the highest international quality standards. Our advanced testing facilities and expert technicians help identify potential issues before they become costly problems.",
       highlights: [
-        "Quality Assurance: Rigorous testing protocols for all materials and structures.",
-        "Advanced Technology: Using cutting-edge testing equipment and techniques.",
-        "Compliance: Meeting international standards and regulations.",
+        "Material Testing: Concrete, steel, and soil strength verification.",
+        "Non-Destructive Testing (NDT): Ensuring durability without damaging structures.",
+        "Quality Assurance: Strict adherence to ISO and ASTM standards.",
       ],
       services: [
-        "Material Testing",
-        "Structural Testing",
-        "Non-Destructive Testing",
-        "Quality Control",
-        "Load Testing",
-        "Laboratory Services",
+        "Concrete & Soil Testing",
+        "Steel Quality Tests",
+        "Welding Inspection",
+        "NDT Services",
       ],
     },
     {
@@ -78,18 +86,17 @@ const Services = () => {
       name: "Calibration",
       title: "Calibration",
       description:
-        "Professional calibration services to ensure your equipment operates at peak performance and meets industry standards. Our certified technicians provide accurate calibration solutions.",
+        "Majoka Calibration Services provides accurate calibration for industrial and laboratory equipment. With our certified experts and modern tools, we help businesses maintain precision, reliability, and compliance with regulatory standards.",
       highlights: [
-        "Precision Calibration: Accurate calibration for all types of equipment.",
-        "Certified Services: ISO-compliant calibration procedures.",
-        "Documentation: Complete calibration certificates and reports.",
+        "Precision Calibration: For electrical, mechanical, and pressure instruments.",
+        "Certified Procedures: ISO/IEC 17025-compliant calibration.",
+        "Regular Maintenance: Scheduled calibration programs to ensure accuracy.",
       ],
       services: [
-        "Instrument Calibration",
-        "Equipment Verification",
-        "On-Site Calibration",
-        "Laboratory Calibration",
-        "Certification Services",
+        "Pressure Gauge Calibration",
+        "Electrical Instrument Calibration",
+        "Temperature & Humidity Calibration",
+        "Flow & Dimensional Calibration",
       ],
     },
     {
@@ -97,19 +104,17 @@ const Services = () => {
       name: "Inspection",
       title: "Inspection",
       description:
-        "Thorough inspection services to identify potential issues and ensure compliance with safety and quality standards. Our experienced inspectors provide detailed assessments.",
+        "Majoka Inspection Services specializes in technical inspection and quality assurance across various industries. We ensure every project meets safety, performance, and compliance requirements through detailed assessments and expert reports.",
       highlights: [
-        "Comprehensive Inspections: Detailed evaluation of all project aspects.",
-        "Safety First: Identifying and addressing potential hazards.",
-        "Regulatory Compliance: Ensuring adherence to all applicable codes.",
+        "Comprehensive Inspections: From construction sites to industrial plants.",
+        "Safety Compliance: Adhering to local and international regulations.",
+        "Advanced Tools: Modern inspection technology for precise results.",
       ],
       services: [
-        "Site Inspection",
-        "Quality Inspection",
-        "Safety Inspection",
-        "Pre-Construction Inspection",
-        "Final Inspection",
-        "Periodic Monitoring",
+        "Structural Inspection",
+        "Welding & Pipeline Inspection",
+        "Safety Audit & Compliance",
+        "Equipment Inspection",
       ],
     },
     {
@@ -117,18 +122,17 @@ const Services = () => {
       name: "Trading",
       title: "Trading",
       description:
-        "Comprehensive trading solutions for construction materials and equipment. We source high-quality products from trusted manufacturers and suppliers worldwide.",
+        "Majoka Trading Division supplies high-quality materials and equipment that meet international standards. We maintain long-term relationships with trusted suppliers to ensure timely delivery and reliability in every order.",
       highlights: [
-        "Quality Products: Sourcing premium construction materials.",
-        "Competitive Pricing: Cost-effective solutions for your projects.",
-        "Reliable Supply: Timely delivery and consistent availability.",
+        "Premium Quality Materials: Certified and durable.",
+        "Wide Range: Electrical, mechanical, and civil construction materials.",
+        "On-Time Supply: Efficient logistics across all regions.",
       ],
       services: [
-        "Material Supply",
-        "Equipment Trading",
-        "Import/Export Services",
-        "Procurement Solutions",
-        "Vendor Management",
+        "Construction Materials",
+        "Safety Equipment",
+        "Electrical & Mechanical Components",
+        "Tools and Hardware",
       ],
     },
     {
@@ -136,18 +140,16 @@ const Services = () => {
       name: "Hotel",
       title: "Hotel",
       description:
-        "Premium hospitality services providing comfortable accommodation for project personnel and clients. Our facilities offer modern amenities and excellent service.",
+        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
       highlights: [
-        "Comfortable Stay: Well-appointed rooms with modern facilities.",
-        "Convenient Location: Easy access to project sites.",
-        "Full Service: Catering, housekeeping, and 24/7 support.",
+        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
+        "Exceptional Service: Professional staff ensuring comfort and care.",
+        "Prime Location: Easy access to business and tourist hubs.",
       ],
       services: [
-        "Accommodation Services",
-        "Catering Services",
-        "Conference Facilities",
-        "Transportation",
-        "Long-term Stays",
+        "Room Booking & Event Hosting",
+        "Corporate Packages",
+        "Dining & Catering Services",
       ],
     },
   ];
@@ -157,8 +159,8 @@ const Services = () => {
   return (
     <>
       <CommonHeader
-        title="Contracting"
-        breadcrumb="Services / Contracting"
+        title={currentService?.title || "Services"}
+        breadcrumb={`Services / ${currentService?.name || "Service Details"}`}
         imagePath="/about-us/about-us-1.png"
       />
       <div className="w-full min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
@@ -186,8 +188,6 @@ const Services = () => {
                           ? "bg-pink-950"
                           : "hover:bg-pink-950/10"
                       }`}
-                      data-aos="fade-up"
-                      data-aos-delay={service.id * 100}
                     >
                       <span
                         className={`text-lg leading-7 ${
@@ -318,8 +318,8 @@ const Services = () => {
                 <Image
                   fill
                   className="w-full h-full object-cover"
-                  src="/services/majoka-services.png"
-                  alt="Services"
+                  src={`/Cetagory/${currentService?.name}.png`}
+                  alt={currentService?.title || "Service"}
                 />
               </div>
 
