@@ -533,7 +533,7 @@ const JobApplicationPage = () => {
                       onChange={handleInputChange}
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
                       placeholder="John Doe"
                     />
                   </div>
@@ -550,7 +550,7 @@ const JobApplicationPage = () => {
                       onChange={handleInputChange}
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -567,7 +567,7 @@ const JobApplicationPage = () => {
                       onChange={handleInputChange}
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
@@ -584,7 +584,7 @@ const JobApplicationPage = () => {
                       onChange={handleInputChange}
                       required
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
                       placeholder="e.g., 5 years"
                     />
                   </div>
@@ -653,7 +653,7 @@ const JobApplicationPage = () => {
                       onChange={handleInputChange}
                       rows={4}
                       disabled={isSubmitting}
-                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent resize-none disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent resize-none disabled:bg-gray-100 disabled:cursor-not-allowed transition-all"
                       placeholder="Tell us why you're a great fit for this position..."
                     />
                   </div>
