@@ -231,7 +231,7 @@ const ServicesContent = () => {
                     <div className="p-3 bg-pink-950 rounded-2xl">
                       <div className="w-9 h-9 relative">
                         <Image
-                          src="/csv/material-icon-theme_pdf.svg"
+                          src="/csv/csv.svg"
                           alt="PDF Icon"
                           fill
                           className="object-cover"
