@@ -1,9 +1,9 @@
 "use client";
-import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import ExpandableSearchBar from "./Common/ExpandableSearchBar";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,6 +13,29 @@ const Navbar = () => {
   const langRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const isHomePage = pathname === "/";
+
+  // Search suggestions - you can customize these
+  const searchSuggestions = [
+    "Services",
+    "Web Development",
+    "Mobile Apps",
+    "UI/UX Design",
+    "Digital Marketing",
+    "E-commerce Solutions",
+    "About Us",
+    "Contact",
+    "Career Opportunities",
+    "Blog Posts",
+    "Projects",
+    "Portfolio",
+  ];
+
+  // Handle search functionality
+  const handleSearch = (query: string) => {
+    console.log("Searching for:", query);
+    // Add your search logic here - navigate to search results, filter content, etc.
+    // Example: router.push(`/search?q=${encodeURIComponent(query)}`);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -214,6 +237,15 @@ const Navbar = () => {
 
           {/* Right Side Controls */}
           <div className="hidden md:flex items-center space-x-6">
+            {/* Search Bar */}
+            <ExpandableSearchBar
+              onSearch={handleSearch}
+              placeholder="Search..."
+              suggestions={searchSuggestions}
+              iconColor={styles.textColor}
+              hoverIconColor={styles.hoverColor}
+            />
+
             {/* Language Selector with Flag */}
             {/* <div className="relative" ref={langRef}>
               <button
@@ -443,6 +475,21 @@ const Navbar = () => {
             >
               Blogs
             </Link>
+          </div>
+
+          {/* Mobile Search Bar */}
+          <div className="mt-8 mb-6">
+            <ExpandableSearchBar
+              onSearch={(query) => {
+                handleSearch(query);
+                setIsMobileMenuOpen(false); // Close mobile menu after search
+              }}
+              placeholder="Search..."
+              suggestions={searchSuggestions}
+              iconColor="text-white/80"
+              hoverIconColor="hover:text-white"
+              className="w-full"
+            />
           </div>
 
           {/* Mobile Language Selector */}
