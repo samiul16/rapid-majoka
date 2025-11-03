@@ -43,6 +43,17 @@ const News = () => {
     "Construction Industries",
   ];
 
+  // Helper function to generate dynamic dates (past dates)
+  const generateDynamicDate = (daysAgo: number) => {
+    const date = new Date();
+    date.setDate(date.getDate() - daysAgo);
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  };
+
   const newsArticles: NewsArticle[] = [
     {
       id: 1,
@@ -51,7 +62,7 @@ const News = () => {
       excerpt:
         "Explore the latest technologies and methods transforming civil engineering projects — from sustainable materials to smart infrastructure solutions.",
       image: "/news/news-1.png",
-      date: "Mar 12, 2023",
+      date: generateDynamicDate(5), // 5 days ago
     },
     {
       id: 2,
@@ -60,7 +71,7 @@ const News = () => {
       excerpt:
         "Learn how modern engineering practices ensure structural integrity, safety, and long-lasting performance in large-scale civil projects.",
       image: "/news/news-2.png",
-      date: "Mar 12, 2023",
+      date: generateDynamicDate(10), // 10 days ago
     },
     {
       id: 3,
@@ -69,7 +80,7 @@ const News = () => {
       excerpt:
         "Discover how innovative design, functionality, and sustainability are shaping the architecture of tomorrow.",
       image: "/news/news-3.png",
-      date: "Mar 12, 2023",
+      date: generateDynamicDate(15), // 15 days ago
     },
     {
       id: 4,
@@ -78,7 +89,7 @@ const News = () => {
       excerpt:
         "A deep dive into projects where aesthetics meet practicality, highlighting the importance of planning, design, and creativity.",
       image: "/news/news-4.png",
-      date: "Mar 12, 2023",
+      date: generateDynamicDate(20), // 20 days ago
     },
     {
       id: 5,
@@ -87,7 +98,7 @@ const News = () => {
       excerpt:
         "Explore how technology, project management, and skilled teams are revolutionizing construction workflows and timelines.",
       image: "/news/news-1.png",
-      date: "Mar 12, 2023",
+      date: generateDynamicDate(25), // 25 days ago
     },
     {
       id: 6,
@@ -96,7 +107,7 @@ const News = () => {
       excerpt:
         " Learn how eco-friendly materials, energy-efficient designs, and responsible practices are reshaping the construction industry.",
       image: "/news/news-2.png",
-      date: "Mar 12, 2023",
+      date: generateDynamicDate(30), // 30 days ago
     },
   ];
 
