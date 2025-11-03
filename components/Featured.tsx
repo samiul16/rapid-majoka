@@ -70,7 +70,7 @@ const FeaturedProjects = () => {
     {
       id: 1,
       name: "Axel Towers",
-      image: "/landing/featured/1.webp",
+      image: "/Featured/1.png",
       category: "Building & Interior",
       location: "Dubai, UAE",
       year: "2024",
@@ -81,7 +81,7 @@ const FeaturedProjects = () => {
     {
       id: 2,
       name: "Glass Hotel",
-      image: "/landing/featured/2.webp",
+      image: "/Featured/2.png",
       category: "Architecture",
       location: "Abu Dhabi, UAE",
       year: "2023",
@@ -92,7 +92,7 @@ const FeaturedProjects = () => {
     {
       id: 3,
       name: "Concord Tower",
-      image: "/landing/featured/3.jpg",
+      image: "/Featured/3.png",
       category: "Mega Architecture",
       location: "Sharjah, UAE",
       year: "2024",
@@ -103,7 +103,7 @@ const FeaturedProjects = () => {
     {
       id: 4,
       name: "Marina Heights",
-      image: "/landing/featured/1.webp",
+      image: "/Featured/4.png",
       category: "Mega Architecture",
       location: "Dubai Marina, UAE",
       year: "2025",
@@ -114,7 +114,7 @@ const FeaturedProjects = () => {
     {
       id: 5,
       name: "Sky Gardens",
-      image: "/landing/featured/2.webp",
+      image: "/Featured/5.png",
       category: "Green Architecture",
       location: "Al Ain, UAE",
       year: "2023",
@@ -125,7 +125,7 @@ const FeaturedProjects = () => {
     {
       id: 6,
       name: "Business Hub",
-      image: "/landing/featured/3.jpg",
+      image: "/Featured/6.png",
       category: "Commercial Design",
       location: "Fujairah, UAE",
       year: "2024",
@@ -172,8 +172,6 @@ const FeaturedProjects = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-   
-
       {/* Content wrapper with relative positioning */}
       <div className="relative z-10 w-full flex flex-col items-center gap-16">
         <div className=" px-4 py-8 rounded-lg ">
