@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import AOS from "aos";
@@ -18,7 +18,7 @@ interface Service {
   services: string[];
 }
 
-const Services = () => {
+const ServicesContent = () => {
   const [activeService, setActiveService] = useState(1);
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -412,6 +412,14 @@ const Services = () => {
       <MeetOurTeam />
       <ClientTestimonials />
     </>
+  );
+};
+
+const Services = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ServicesContent />
+    </Suspense>
   );
 };
 
