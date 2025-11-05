@@ -166,7 +166,7 @@ const ClientTestimonials = () => {
   return (
     <div className="bg-white flex flex-col items-center w-full py-20 gap-16 px-4 md:px-8 lg:px-8">
       <div className="flex flex-col items-center gap-4 max-w-xl mx-auto text-center">
-        <span className="text-4xl text-stone-900 font-semibold">
+        <span className="text-4xl text-pink-950 font-semibold">
           Client Testimonials
         </span>
 
@@ -235,9 +235,7 @@ const ClientTestimonials = () => {
 
         {/* Carousel Indicators */}
         <div className="flex justify-center mt-8 gap-3">
-          {Array.from({
-            length: Math.max(1, testimonialsData.length - cardsPerView + 1),
-          }).map((_, index) => (
+          {Array.from({ length: 5 }).map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}

@@ -140,7 +140,7 @@ const WhyChooseUsSection = () => {
         >
           {/* Title */}
           <motion.h2
-            className="text-3xl sm:text-4xl font-black text-stone-900"
+            className="text-3xl sm:text-4xl font-black text-pink-950"
             variants={featureVariants}
           >
             Why Choose Us?

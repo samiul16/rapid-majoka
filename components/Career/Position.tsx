@@ -62,7 +62,7 @@ const Position = () => {
     <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Header */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-pink-950 mb-12">
           Current Open Position
         </h2>
 
@@ -87,7 +87,7 @@ const Position = () => {
 
               {/* Job Details */}
               <div className="flex-grow">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl md:text-2xl font-bold text-pink-950 mb-3">
                   {job.title}
                 </h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">

@@ -99,7 +99,7 @@ const Portfolio = () => {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Header Section */}
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-pink-950 mb-6">
             Majoka Project Portfolio
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -127,8 +127,8 @@ const Portfolio = () => {
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
 
-                {/* Hover Overlay - Only appears on hover */}
-                <div className="absolute inset-0 bg-gradient-to-b from-pink-950/0 to-pink-950/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-between p-6">
+                {/* Always Visible Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-pink-950/0 to-pink-950/80 flex flex-col justify-between p-6">
                   {/* Contract Number - Top Right */}
                   <div className="flex justify-end">
                     {/* <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2">
@@ -138,7 +138,7 @@ const Portfolio = () => {
                     </div> */}
                   </div>
 
-                  {/* Project Details - Full Overlay */}
+                  {/* Project Details - Always Visible */}
                   <div className="text-white space-y-3">
                     {/* Contract No */}
                     <div className="flex justify-between items-start">

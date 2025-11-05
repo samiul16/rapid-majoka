@@ -8,7 +8,7 @@ const JoinTeam = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content Section */}
           <div className="order-2 lg:order-1">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-pink-950 mb-6 leading-tight">
               {/* Build Your Future with Us: Careers in Construction */}
               Careers at Majoka
             </h2>

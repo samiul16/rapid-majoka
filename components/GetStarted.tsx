@@ -21,6 +21,7 @@ const GetStarted = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [focusedField, setFocusedField] = useState<string | null>(null);
 
   const services = [
     "Contracting",
@@ -251,49 +252,82 @@ const GetStarted = () => {
           </div>
 
           {/* Right Content - Contact Form */}
-          <div className="w-full lg:w-5/12 bg-white/20 bg-opacity-40 backdrop-blur-md rounded-[20px] p-12 lg:p-15 border border-gray-400">
+          <div className="w-full lg:w-5/12 bg-white/10 rounded-[20px] p-12 lg:p-15 border border-gray-400">
             <form onSubmit={handleSubmit} className="flex flex-col space-y-10">
               <div className="flex flex-col space-y-6">
                 {/* Name Input */}
-                <div className="w-full h-[50px] border border-[#e9f5fb] rounded-xl px-4 py-4 flex items-center">
+                <div className="relative">
                   <input
                     type="text"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
-                    placeholder="Enter Name"
+                    onFocus={() => setFocusedField("fullName")}
+                    onBlur={() => setFocusedField(null)}
+                    placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full bg-transparent text-[#e9f5fb] placeholder-[#e9f5fb] outline-none text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
+                  <label
+                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                      formData.fullName || focusedField === "fullName"
+                        ? "-translate-y-1/2 text-xs text-white bg-white/10 rounded backdrop-blur-sm"
+                        : "translate-y-3 text-lg text-[#e9f5fb] bg-transparent"
+                    }`}
+                  >
+                    Name
+                  </label>
                 </div>
 
                 {/* Phone Input */}
-                <div className="w-full h-[50px] border border-[#e9f5fb] rounded-xl px-4 py-4 flex items-center">
+                <div className="relative">
                   <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    placeholder="Phone Number"
+                    onFocus={() => setFocusedField("phone")}
+                    onBlur={() => setFocusedField(null)}
+                    placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full bg-transparent text-[#e9f5fb] placeholder-[#e9f5fb] outline-none text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
+                  <label
+                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                      formData.phone || focusedField === "phone"
+                        ? "-translate-y-1/2 text-xs text-white bg-white/10 backdrop-blur-sm rounded"
+                        : "translate-y-3 text-lg text-[#e9f5fb] bg-transparent"
+                    }`}
+                  >
+                    Phone Number
+                  </label>
                 </div>
 
                 {/* Email Input */}
-                <div className="w-full h-[50px] border border-[#e9f5fb] rounded-xl px-4 py-4 flex items-center">
+                <div className="relative">
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="Email Address"
+                    onFocus={() => setFocusedField("email")}
+                    onBlur={() => setFocusedField(null)}
+                    placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full bg-transparent text-[#e9f5fb] placeholder-[#e9f5fb] outline-none text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
+                  <label
+                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                      formData.email || focusedField === "email"
+                        ? "-translate-y-1/2 text-xs text-white bg-white/10 backdrop-blur-sm rounded"
+                        : "translate-y-3 text-lg text-[#e9f5fb] bg-transparent"
+                    }`}
+                  >
+                    Email Address
+                  </label>
                 </div>
 
                 {/* Services Dropdown */}
@@ -335,17 +369,28 @@ const GetStarted = () => {
                 </div>
 
                 {/* Message Input */}
-                <div className="w-full h-[50px] border border-[#e9f5fb] rounded-xl px-4 py-4 flex items-center">
+                <div className="relative">
                   <input
                     type="text"
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Message"
+                    onFocus={() => setFocusedField("message")}
+                    onBlur={() => setFocusedField(null)}
+                    placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full bg-transparent text-[#e9f5fb] placeholder-[#e9f5fb] outline-none text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-[50px] px-4 py-3 bg-transparent border border-[#e9f5fb] rounded-xl text-[#e9f5fb] text-lg font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-gray-200 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
+                  <label
+                    className={`absolute left-3 top-0 px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                      formData.message || focusedField === "message"
+                        ? "-translate-y-1/2 text-xs text-white bg-white/10 backdrop-blur-sm rounded"
+                        : "translate-y-3 text-lg text-[#e9f5fb] bg-transparent"
+                    }`}
+                  >
+                    Message
+                  </label>
                 </div>
               </div>
 

@@ -41,13 +41,13 @@ export default function WorkSteps() {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-stone-900 mb-4">
+          <h2 className="text-4xl font-bold text-pink-950 mb-4">
             Our Work Steps
           </h2>
         </div>
 
         {/* Main Image with Play Button */}
-        <div className="relative mb-16">
+        {/* <div className="relative mb-16">
           <div className="relative w-full h-[500px] rounded-[40px] overflow-hidden shadow">
             <Image
               src="/landing/work/1.jpg"
@@ -56,7 +56,6 @@ export default function WorkSteps() {
               className="object-cover"
             />
 
-            {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
               <button
                 onClick={handlePlayVideo}
@@ -72,7 +71,7 @@ export default function WorkSteps() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Steps Timeline */}
         <div className="relative">

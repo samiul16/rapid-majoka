@@ -18,29 +18,29 @@ const WorkSteps = () => {
 
   const teamMembers = [
     {
-      name: "MD Salman",
-      position: "Senior Engineer",
-      image: "/team-members/1.jpg",
+      name: "Yousuf Noor",
+      position: "Chief Executive Officer (CEO) (Smits limited)",
+      image: "/team-members/1.jpeg",
     },
     {
-      name: "Mr. Fung Su Lee",
-      position: "Architect Engineer",
-      image: "/team-members/2.jpg",
+      name: "Mohammed Noor",
+      position: "Project Manager (Smits limited)",
+      image: "/team-members/2.jpeg",
     },
     {
-      name: "Robert Bruce",
-      position: "Lead Site Engineer",
-      image: "/team-members/3.jpg",
+      name: "Ismail Noor",
+      position: "Project Management Specialist",
+      image: "/team-members/3.jpeg",
     },
     {
-      name: "Sarah Johnson",
-      position: "Project Manager",
-      image: "/team-members/2.jpg",
+      name: "Mohammed Noor",
+      position: "Chief Executive Officer (CEO) (Smits limited)",
+      image: "/team-members/2.jpeg",
     },
     {
-      name: "Michael Chen",
-      position: "Construction Lead",
-      image: "/team-members/1.jpg",
+      name: "Ismail Noor",
+      position: "Project Management Specialist",
+      image: "/team-members/1.jpeg",
     },
   ];
 

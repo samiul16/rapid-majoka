@@ -66,7 +66,7 @@ export default function Services() {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-stone-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-pink-950 mb-4">
             Our Services
           </h2>
           <p className="text-lg text-stone-900 max-w-2xl mx-auto">
@@ -79,61 +79,50 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.id}
-              className={`
-                rounded-2xl p-8 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 border border-stone-400
-                ${
-                  service.featured
-                    ? "bg-pink-950 text-white"
-                    : "bg-white text-gray-900 border border-gray-200"
-                }
-              `}
+              className="group rounded-2xl p-8 text-center transition-all duration-500 hover:shadow-2xl hover:scale-105 border border-stone-400 bg-white hover:bg-pink-950 cursor-pointer"
             >
               {/* Icon */}
               <div className="flex justify-center mb-6">
-                <div
-                  className={`
-                  w-16 h-16 rounded-full flex items-center justify-center
-                  ${service.featured ? "bg-white/20" : "bg-pink-950/80"}
-                `}
-                >
+                <div className="w-16 h-16 rounded-full flex items-center justify-center bg-pink-950/80 group-hover:bg-white/20 transition-all duration-500">
                   <Image
                     src={service.icon}
                     alt={service.title}
                     width={32}
                     height={32}
-                    className={`
-                      ${
-                        service.featured
-                          ? "filter brightness-0 invert"
-                          : "filter brightness-0 invert"
-                      }
-                    `}
+                    className="filter brightness-0 invert transition-all duration-500"
                   />
                 </div>
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-white transition-colors duration-500">
+                {service.title}
+              </h3>
 
               {/* Description */}
-              <p
-                className={`
-                text-base leading-relaxed mb-8
-                ${service.featured ? "text-white/90" : "text-gray-600"}
-              `}
-              >
+              <p className="text-base leading-relaxed mb-8 text-gray-600 group-hover:text-white/90 transition-colors duration-500">
                 {service.description}
               </p>
 
-              {/* Read More Button */}
+              {/* Get Started Button */}
               <button
                 onClick={() => handleReadMore(service.id)}
-                className={`
-                px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 cursor-pointer
-                ${service.featured ? " text-white " : " text-pink-950"}
-              `}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 text-pink-950 group-hover:text-white cursor-pointer"
               >
-                Read More
+                Get Started
+                <svg
+                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </button>
             </div>
           ))}

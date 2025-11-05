@@ -107,25 +107,14 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isMobileMenuOpen]);
 
-  // Determine navbar background and text colors
+  // Determine navbar background and text colors - all pages follow home page style
   const getNavbarStyles = () => {
-    if (isHomePage) {
-      return {
-        navBg: isScrolled ? "bg-black/20 backdrop-blur-md" : "bg-transparent",
-        textColor: "text-white/80 group-hover:text-pink-950",
-        hoverColor: "hover:text-pink-950",
-        activeColor: "text-pink-950",
-      };
-    } else {
-      return {
-        navBg: isScrolled ? "bg-white shadow-md" : "bg-white shadow-md",
-        textColor: isScrolled ? "text-pink-950" : "text-pink-950",
-        hoverColor: isScrolled ? "hover:text-pink-900" : "hover:text-pink-900",
-        activeColor: isScrolled
-          ? "text-pink-950 font-semibold"
-          : "text-pink-900 font-semibold",
-      };
-    }
+    return {
+      navBg: isScrolled ? "bg-black/20 backdrop-blur-md" : "bg-transparent",
+      textColor: "text-white/80 group-hover:text-pink-950",
+      hoverColor: "hover:text-pink-900",
+      activeColor: "text-pink-950/90",
+    };
   };
 
   const styles = getNavbarStyles();
@@ -161,7 +150,7 @@ const Navbar = () => {
                     : styles.textColor
                 } ${
                   styles.hoverColor
-                } font-semibold transition-colors text-lg font-anek`}
+                } font-semibold uppercase transition-colors text-lg font-anek`}
               >
                 Services
               </Link>
@@ -173,7 +162,7 @@ const Navbar = () => {
                     : styles.textColor
                 } ${
                   styles.hoverColor
-                } font-semibold transition-colors text-lg font-anek`}
+                } font-semibold uppercase transition-colors text-lg font-anek`}
               >
                 Project
               </Link>
@@ -194,7 +183,7 @@ const Navbar = () => {
                   pathname === "/career" ? styles.activeColor : styles.textColor
                 } ${
                   styles.hoverColor
-                } font-semibold transition-colors text-lg font-anek`}
+                } font-semibold uppercase transition-colors text-lg font-anek`}
               >
                 Career
               </Link>
@@ -204,7 +193,7 @@ const Navbar = () => {
                   pathname === "/blogs" ? styles.activeColor : styles.textColor
                 } ${
                   styles.hoverColor
-                } font-semibold transition-colors text-lg font-anek`}
+                } font-semibold uppercase transition-colors text-lg font-anek`}
               >
                 Blogs
               </Link>
@@ -216,7 +205,7 @@ const Navbar = () => {
                     : styles.textColor
                 } ${
                   styles.hoverColor
-                } font-semibold transition-colors text-lg font-anek`}
+                } font-semibold uppercase transition-colors text-lg font-anek`}
               >
                 About
               </Link>
@@ -228,7 +217,7 @@ const Navbar = () => {
                     : styles.textColor
                 } ${
                   styles.hoverColor
-                } font-semibold transition-colors text-lg font-anek`}
+                } font-semibold uppercase transition-colors text-lg font-anek`}
               >
                 Contact
               </Link>
@@ -313,13 +302,9 @@ const Navbar = () => {
             {/* CTA Button */}
             <Link
               href="/contact"
-              className={`w-44 h-10 px-5 py-3 ${
-                isHomePage
-                  ? "bg-pink-950  hover:bg-pink-900"
-                  : "bg-pink-800  hover:bg-pink-950"
-              } rounded-[30px] inline-flex justify-center items-center gap-2.5 transition-colors shadow`}
+              className="w-44 h-10 px-5 py-3 bg-pink-950 hover:bg-pink-900 rounded-[30px] inline-flex justify-center items-center gap-2.5 transition-colors shadow"
             >
-              <span className="text-indigo-50 text-base font-semibold">
+              <span className="text-indigo-50 text-base font-semibold uppercase">
                 Book A Meeting
               </span>
             </Link>

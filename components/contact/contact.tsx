@@ -40,6 +40,7 @@ export default function ContactPage() {
     type: "success" | "error" | null;
     message: string;
   }>({ type: null, message: "" });
+  const [focusedField, setFocusedField] = useState<string | null>(null);
 
   const contactInfo: ContactCard[] = [
     {
@@ -197,7 +198,7 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-pink-950 mb-4">
             Get In Touch
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
@@ -225,7 +226,7 @@ export default function ContactPage() {
                   variants={cardVariants}
                   whileHover={{ y: -5, transition: { duration: 0.3 } }}
                 >
-                  <div className="bg-[#EDE8E9] rounded-xl shadow p-6 md:p-8 h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
+                  <div className="bg-white rounded-xl shadow p-6 md:p-8 h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
                     {/* Icon and Title */}
                     <div className="flex items-center gap-4 mb-6">
                       <motion.div
@@ -235,7 +236,7 @@ export default function ContactPage() {
                       >
                         <Icon className="w-7 h-7 text-red-900 group-hover:text-white transition-colors duration-300" />
                       </motion.div>
-                      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                      <h3 className="text-2xl sm:text-3xl font-bold text-pink-950">
                         {info.title}
                       </h3>
                     </div>
@@ -271,7 +272,7 @@ export default function ContactPage() {
 
           {/* Right Side - Contact Form */}
           <motion.div
-            className="bg-[#EDE8E9] rounded-xl shadow p-6 sm:p-8 lg:p-10 order-1 lg:order-2 flex flex-col"
+            className="bg-white rounded-xl shadow p-6 sm:p-8 lg:p-10 order-1 lg:order-2 flex flex-col"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -279,7 +280,7 @@ export default function ContactPage() {
           >
             <form onSubmit={handleSubmit} className="flex flex-col h-full">
               {/* Title */}
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-pink-950 mb-6">
                 Send us a Message
               </h2>
 
@@ -311,70 +312,102 @@ export default function ContactPage() {
               {/* Form Fields Container */}
               <div className="space-y-5 flex-1">
                 {/* Name Field */}
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Full Name *
-                  </label>
+                <div className="relative">
                   <input
                     type="text"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
-                    placeholder="Enter your name"
+                    onFocus={() => setFocusedField("fullName")}
+                    onBlur={() => setFocusedField(null)}
+                    placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full p-3.5 bg-white rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-pink-950 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
+                  <label
+                    className={`absolute left-3 top-0 bg-white px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                      formData.fullName || focusedField === "fullName"
+                        ? "-translate-y-1/2 text-xs text-pink-950"
+                        : "translate-y-3 text-base text-gray-500"
+                    }`}
+                  >
+                    Name
+                  </label>
                 </div>
 
                 {/* Phone Field */}
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Phone Number *
-                  </label>
+                <div className="relative">
                   <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="Enter your phone"
+                    onFocus={() => setFocusedField("phone")}
+                    onBlur={() => setFocusedField(null)}
+                    placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full p-3.5 bg-white rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-pink-950 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
+                  <label
+                    className={`absolute left-3 top-0 bg-white px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                      formData.phone || focusedField === "phone"
+                        ? "-translate-y-1/2 text-xs text-pink-950"
+                        : "translate-y-3 text-base text-gray-500"
+                    }`}
+                  >
+                    Phone Number
+                  </label>
                 </div>
 
                 {/* Email Field */}
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Email Address *
-                  </label>
+                <div className="relative">
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="Enter your email"
+                    onFocus={() => setFocusedField("email")}
+                    onBlur={() => setFocusedField(null)}
+                    placeholder=" "
                     required
                     disabled={isSubmitting}
-                    className="w-full p-3.5 bg-white rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-pink-950 transition-all peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
+                  <label
+                    className={`absolute left-3 top-0 bg-white px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                      formData.email || focusedField === "email"
+                        ? "-translate-y-1/2 text-xs text-pink-950"
+                        : "translate-y-3 text-base text-gray-500"
+                    }`}
+                  >
+                    Email Address
+                  </label>
                 </div>
 
                 {/* Message Textarea */}
-                <div className="flex-1">
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Message *
-                  </label>
+                <div className="relative flex-1">
                   <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Write your message here..."
+                    onFocus={() => setFocusedField("message")}
+                    onBlur={() => setFocusedField(null)}
+                    placeholder=" "
                     required
-                    className="w-full h-full min-h-[120px] p-3.5 bg-white rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent transition-all resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                     disabled={isSubmitting}
+                    className="w-full h-full min-h-[120px] px-4 py-3 bg-white rounded-lg border border-gray-300 text-gray-900 text-base font-normal font-['Anek_Malayalam'] focus:outline-none focus:border-pink-950 transition-all resize-none peer placeholder-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   />
+                  <label
+                    className={`absolute left-3 top-0 bg-white px-1 transition-all duration-200 pointer-events-none font-['Anek_Malayalam'] ${
+                      formData.message || focusedField === "message"
+                        ? "-translate-y-1/2 text-xs text-pink-950"
+                        : "translate-y-3 text-base text-gray-500"
+                    }`}
+                  >
+                    Message
+                  </label>
                 </div>
               </div>
 
