@@ -92,7 +92,7 @@ const ClientTestimonials = () => {
       name: "Yousuf Noor",
       title:
         "We are impressed by their ability to meet our specific needs and their strong customer service. We appreciated the high level of customer services.",
-      image: "/team-members/1.jpeg",
+      image: "/clientt/1.jpeg",
       testimonial: "",
     },
     {
@@ -100,39 +100,39 @@ const ClientTestimonials = () => {
       name: "Stella Smith, New York",
       title:
         "Majoka Engineering delivered exactly what we expected — professional work, timely completion, and great communication from start to finish.",
-      image: "/team-members/2.jpeg",
+      image: "/clientt/2.jpeg",
       testimonial: "",
     },
     {
       id: 3,
-      name: "Ernest Smith, New York",
+      name: "Abdur Gaffar, Dubai",
       title:
         "Their technical expertise and dedication to quality truly set them apart. Every step of our project was handled with professionalism and care.",
-      image: "/team-members/3.jpeg",
+      image: "/clientt/3.jpeg",
       testimonial: "",
     },
     {
       id: 4,
-      name: "Yousuf Noor",
+      name: "Yousuf Noor, Dubai",
       title:
         "Exceptional service quality and an impressive fleet of vehicles. The booking process is straightforward, and the customer service team is always available to help. Will definitely use their services again.",
-      image: "/team-members/1.jpeg",
+      image: "/clientt/4.jpeg",
       testimonial: "",
     },
     {
       id: 5,
-      name: "Emma Davis",
+      name: "Emma Davis, USA",
       title:
         "As a frequent business traveler, I need reliable transportation. This service has never let me down. Professional drivers, clean vehicles, and always on time. Perfect for corporate needs.",
-      image: "/team-members/2.jpeg",
+      image: "/clientt/2.jpeg",
       testimonial: "",
     },
     {
       id: 6,
-      name: "James Wilson",
+      name: "Milon Islam, Dubai",
       title:
         "Great selection of luxury vehicles at competitive prices. The staff is knowledgeable and helpful in choosing the right car for your needs. The entire experience from booking to return is smooth and professional.",
-      image: "/team-members/3.jpeg",
+      image: "/clientt/3.jpeg",
       testimonial: "",
     },
   ];
