@@ -31,14 +31,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
         </div>
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-l from-pink-950/10 to-pink-950" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-t from-pink-950 to-pink-950/10" />
 
-        {/* Content */}
-        <div className="absolute inset-0 z-20 p-6 flex flex-col justify-center">
-          <div className="flex justify-between items-start mb-4">
-            <h3 className="text-xl mt-14 font-medium text-[#E9F5FB]">
-              {testimonial.title}
-            </h3>
+        {/* Content - Now at Bottom */}
+        <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end">
+          <div className="flex justify-end items-start mb-4">
             <Image
               height={800}
               width={800}
@@ -48,11 +45,15 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
             />
           </div>
 
-          <p className="text-[#E9F5FB] text-sm md:text-base mb-8 mt-10">
+          <h3 className="text-xl font-medium text-[#E9F5FB] mb-6">
+            {testimonial.title}
+          </h3>
+
+          <p className="text-[#E9F5FB] text-sm md:text-base mb-8">
             {testimonial.testimonial}
           </p>
 
-          <div className="flex items-center mt-auto">
+          <div className="flex items-center">
             <div className="w-5 h-[1px] bg-white"></div>
             <span className="ml-2 text-white opacity-90 text-sm">
               {testimonial.name}
