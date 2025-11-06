@@ -116,41 +116,44 @@ const WorkSteps = () => {
 
       {/* Team Members */}
       <div className="relative">
-        {/* Navigation Arrows */}
-        <button
-          onClick={handlePrevSlide}
-          disabled={isTransitioning}
-          className={`absolute top-1/2 left-8 sm:left-4 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 hover:bg-red-900 rounded-full flex items-center justify-center transition-colors bg-rose-800 ${
-            isTransitioning ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
-          }`}
-        >
-          <Image
-            src="/arrowL.svg"
-            alt="Previous"
-            width={24}
-            height={24}
-            className="w-6 h-6 sm:w-8 sm:h-8 text-white"
-          />
-        </button>
-
-        <button
-          onClick={handleNextSlide}
-          disabled={isTransitioning}
-          className={`absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 hover:bg-[#e9f5fb]/40 rounded-full flex items-center justify-center transition-colors bg-rose-800 ${
-            isTransitioning ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
-          }`}
-        >
-          <Image
-            src="/arrowR.svg"
-            alt="Previous"
-            width={24}
-            height={24}
-            className="w-6 h-6 sm:w-8 sm:h-8 text-white"
-          />
-        </button>
-
         {/* Team Members Grid */}
-        <div className="px-4 max-w-[1800px] mx-auto">
+        <div className="px-4 w-[97%] mx-auto relative">
+          {/* Navigation Arrows - Positioned relative to the grid */}
+          <button
+            onClick={handlePrevSlide}
+            disabled={isTransitioning}
+            className={`absolute top-1/2 -left-4 sm:-left-8 lg:-left-16 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 hover:bg-red-900 rounded-full flex items-center justify-center transition-colors bg-rose-800 ${
+              isTransitioning
+                ? "opacity-50 cursor-not-allowed"
+                : "cursor-pointer"
+            }`}
+          >
+            <Image
+              src="/arrowL.svg"
+              alt="Previous"
+              width={24}
+              height={24}
+              className="w-6 h-6 sm:w-8 sm:h-8 text-white"
+            />
+          </button>
+
+          <button
+            onClick={handleNextSlide}
+            disabled={isTransitioning}
+            className={`absolute top-1/2 -right-4 sm:-right-8 lg:-right-16 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 hover:bg-[#e9f5fb]/40 rounded-full flex items-center justify-center transition-colors bg-rose-800 ${
+              isTransitioning
+                ? "opacity-50 cursor-not-allowed"
+                : "cursor-pointer"
+            }`}
+          >
+            <Image
+              src="/arrowR.svg"
+              alt="Next"
+              width={24}
+              height={24}
+              className="w-6 h-6 sm:w-8 sm:h-8 text-white"
+            />
+          </button>
           <div
             className={`grid gap-6 md:gap-[30px] transition-all duration-500 ${
               itemsToShow === 1
