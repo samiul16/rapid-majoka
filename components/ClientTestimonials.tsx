@@ -113,20 +113,21 @@ const ClientTestimonials = () => {
     },
     {
       id: 4,
+      name: "Muhammad Salim, Dubai",
+      title:
+        "As a frequent business traveler, I need reliable transportation. This service has never let me down. Professional drivers, clean vehicles, and always on time. Perfect for corporate needs.",
+      image: "/clientt/5.jpeg",
+      testimonial: "",
+    },
+    {
+      id: 5,
       name: "Yousuf Noor, Dubai",
       title:
         "Exceptional service quality and an impressive fleet of vehicles. The booking process is straightforward, and the customer service team is always available to help. Will definitely use their services again.",
       image: "/clientt/4.jpeg",
       testimonial: "",
     },
-    {
-      id: 5,
-      name: "Emma Davis, USA",
-      title:
-        "As a frequent business traveler, I need reliable transportation. This service has never let me down. Professional drivers, clean vehicles, and always on time. Perfect for corporate needs.",
-      image: "/clientt/2.jpeg",
-      testimonial: "",
-    },
+
     {
       id: 6,
       name: "Milon Islam, Dubai",
