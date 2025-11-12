@@ -115,7 +115,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links - Column 2 */}
-          <div className="space-y-4 h-full flex flex-col ml-8 mt-12">
+          <div className="space-y-4 h-full flex flex-col md:ml-8 mt-12">
             <h3 className="text-white text-2xl font-semibold mb-2">
               Quick Links
             </h3>
@@ -160,7 +160,7 @@ export default function Footer() {
           </div>
 
           {/* Resources - Column 3 */}
-          <div className="space-y-4 h-full flex flex-col ml-6 mt-12">
+          <div className="space-y-4 h-full flex flex-col md:ml-6 mt-12">
             <h3 className="text-white text-2xl font-semibold mb-2">
               Resources
             </h3>
@@ -215,7 +215,7 @@ export default function Footer() {
           </div>
 
           {/* Services - Column 4 */}
-          <div className="space-y-4 h-full flex flex-col ml-2 mt-12">
+          <div className="space-y-4 h-full flex flex-col md:ml-2 mt-12">
             <h3 className="text-white text-2xl font-semibold mb-2">Services</h3>
             <ul className="space-y-3 flex-grow">
               <li>
@@ -258,7 +258,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Us - Column 5 */}
-          <div className="space-y-4 h-full flex flex-col ml-2 mt-12">
+          <div className="space-y-4 h-full flex flex-col md:ml-2 mt-12">
             <h3 className="text-white text-2xl font-semibold mb-2">
               Contact Us
             </h3>

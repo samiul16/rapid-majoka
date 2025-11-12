@@ -401,7 +401,7 @@ const Navbar = () => {
               href="/services"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`${
-                pathname === "/services" ? "text-sky-400" : "text-white/80"
+                pathname === "/services" ? "text-red-700" : "text-white/80"
               } hover:text-white font-semibold transition-colors text-xl py-2 font-anek`}
             >
               Services
@@ -410,7 +410,7 @@ const Navbar = () => {
               href="/project"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`${
-                pathname === "/project" ? "text-sky-400" : "text-white/80"
+                pathname === "/project" ? "text-red-700" : "text-white/80"
               } hover:text-white font-semibold transition-colors text-xl py-2 font-anek`}
             >
               Project
@@ -428,7 +428,7 @@ const Navbar = () => {
               href="/career"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`${
-                pathname === "/career" ? "text-sky-400" : "text-white/80"
+                pathname === "/career" ? "text-red-700" : "text-white/80"
               } hover:text-white font-semibold transition-colors text-xl py-2 font-anek`}
             >
               Career
@@ -437,7 +437,7 @@ const Navbar = () => {
               href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`${
-                pathname === "/contact" ? "text-sky-400" : "text-white/80"
+                pathname === "/contact" ? "text-red-700" : "text-white/80"
               } hover:text-white font-semibold transition-colors text-xl py-2 font-anek`}
             >
               Contact
@@ -446,7 +446,7 @@ const Navbar = () => {
               href="/about-us"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`${
-                pathname === "/about-us" ? "text-sky-400" : "text-white/80"
+                pathname === "/about-us" ? "text-red-700" : "text-white/80"
               } hover:text-white font-semibold transition-colors text-xl py-2 font-anek`}
             >
               About
@@ -455,7 +455,7 @@ const Navbar = () => {
               href="/blogs"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`${
-                pathname === "/blogs" ? "text-sky-400" : "text-white/80"
+                pathname === "/blogs" ? "text-red-700" : "text-white/80"
               } hover:text-white font-semibold transition-colors text-xl py-2 font-anek`}
             >
               Blogs
@@ -498,7 +498,7 @@ const Navbar = () => {
             <Link
               href="/book-meeting"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-44 h-10 px-5 py-3 bg-blue-400 rounded-[30px] inline-flex justify-center items-center gap-2.5 hover:bg-blue-500 transition-colors"
+              className="w-44 h-10 px-5 py-3 bg-red-700 rounded-[30px] inline-flex justify-center items-center gap-2.5 hover:bg-red-800 transition-colors"
             >
               <span className="text-indigo-50 text-base font-medium">
                 Book A Meeting
