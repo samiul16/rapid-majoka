@@ -19,27 +19,27 @@ const WorkSteps = () => {
   const teamMembers = [
     {
       name: "Yousuf Noor",
-      position: "Chief Executive Officer (CEO) (Smits limited)",
+      position: "Chief Executive Officer (CEO) (Majoka Engineering)",
       image: "/team-members/1.jpeg",
     },
     {
       name: "Mohammed Noor",
-      position: "Project Manager (Smits limited)",
+      position: "Project Manager (Majoka Engineering)",
       image: "/team-members/2.jpeg",
     },
     {
       name: "Ismail Noor",
-      position: "Project Management Specialist",
+      position: "Project Management Specialist (Majoka Engineering)",
       image: "/team-members/3.jpeg",
     },
     {
       name: "Mohammed Noor",
-      position: "Chief Executive Officer (CEO) (Smits limited)",
+      position: "Chief Executive Officer (Majoka Engineering)",
       image: "/team-members/2.jpeg",
     },
     {
       name: "Ismail Noor",
-      position: "Project Management Specialist",
+      position: "Project Management Specialist (Majoka Engineering)",
       image: "/team-members/1.jpeg",
     },
   ];

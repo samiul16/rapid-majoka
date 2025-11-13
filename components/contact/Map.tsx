@@ -114,7 +114,7 @@ export default function MapSection() {
                       <div className="text-sm">
                         <p className="font-semibold">Phone: +966-0503010184</p>
                         <p className="font-semibold">
-                          Email: info@smits-limited.com
+                          Email: info@majokaeng.com
                         </p>
                       </div>
                     </div>

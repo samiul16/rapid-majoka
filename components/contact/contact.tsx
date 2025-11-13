@@ -54,8 +54,8 @@ export default function ContactPage() {
       id: 2,
       icon: Mail,
       title: "Email",
-      content: "info@smits-limited.com",
-      link: "mailto:info@smits-limited.com",
+      content: "info@majokaeng.com",
+      link: "mailto:info@majokaeng.com",
     },
     {
       id: 3,

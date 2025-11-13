@@ -29,10 +29,10 @@ const WorkSteps = () => {
               <div className="flex flex-col">
                 <h4 className="text-xl font-medium text-white">Email</h4>
                 <a
-                  href="mailto:info@smits-limited.com"
+                  href="mailto:info@majokaeng.com"
                   className="text-base font-medium text-white hover:underline"
                 >
-                  info@smits-limited.com
+                  info@majokaeng.com
                 </a>
               </div>
             </div>

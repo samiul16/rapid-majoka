@@ -116,24 +116,23 @@ const ClientTestimonials = () => {
       id: 4,
       name: "Muhammad Salim, Dubai",
       title:
-        "As a frequent business traveler, I need reliable transportation. This service has never let me down. Professional drivers, clean vehicles, and always on time. Perfect for corporate needs.",
+        "Outstanding engineering solutions with exceptional attention to detail. Their team delivered beyond our expectations with professional service throughout.",
       image: "/clientt/5.jpeg",
       testimonial: "",
     },
     {
       id: 5,
-      name: "Yousuf Noor, Dubai",
+      name: "Ahmed Hassan, Dubai",
       title:
-        "Exceptional service quality and an impressive fleet of vehicles. The booking process is straightforward, and the customer service team is always available to help. Will definitely use their services again.",
+        "Reliable and efficient service delivery. Majoka Engineering consistently provides high-quality work with excellent project management and communication.",
       image: "/clientt/4.jpeg",
       testimonial: "",
     },
-
     {
       id: 6,
       name: "Milon Islam, Dubai",
       title:
-        "Great selection of luxury vehicles at competitive prices. The staff is knowledgeable and helpful in choosing the right car for your needs. The entire experience from booking to return is smooth and professional.",
+        "Their technical expertise and commitment to excellence made our project a complete success. Highly recommend their engineering services.",
       image: "/clientt/3.jpeg",
       testimonial: "",
     },
