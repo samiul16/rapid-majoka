@@ -21,12 +21,12 @@ export default function WorkSteps() {
     },
     {
       id: 2,
-      title: "Implementations of quality works",
+      title: "Preparation of the work plan",
       stepNumber: "Step 2",
     },
     {
       id: 3,
-      title: "Preparation of the work plan",
+      title: "Implementations of quality works",
       stepNumber: "Step 3",
     },
     {

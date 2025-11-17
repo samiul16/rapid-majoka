@@ -23,7 +23,7 @@ const WorkSteps = () => {
       image: "/team-members/1.jpeg",
     },
     {
-      name: "Mohammed Noor",
+      name: "Abdulrahman Wasil",
       position: "Project Manager (Majoka Engineering)",
       image: "/team-members/2.jpeg",
     },
@@ -35,12 +35,12 @@ const WorkSteps = () => {
     {
       name: "Mohammed Noor",
       position: "Chief Executive Officer (Majoka Engineering)",
-      image: "/team-members/2.jpeg",
+      image: "/team-members/4.png",
     },
     {
-      name: "Ismail Noor",
+      name: "Abdulrahman Noor",
       position: "Project Management Specialist (Majoka Engineering)",
-      image: "/team-members/1.jpeg",
+      image: "/team-members/5.jpg",
     },
   ];
 
