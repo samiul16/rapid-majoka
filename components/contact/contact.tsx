@@ -54,8 +54,8 @@ export default function ContactPage() {
       id: 2,
       icon: Mail,
       title: "Email",
-      content: "info@majokaeng.com",
-      link: "mailto:info@majokaeng.com",
+      content: "info@majokaengineering.com",
+      link: "mailto:info@majokaengineering.com",
     },
     {
       id: 3,
