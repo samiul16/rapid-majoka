@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Stats() {
   return (
-    <div>
+    <div className="">
       {/* Stats Section */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16 bg-gradient-to-l from-pink-950/40 to-pink-950 px-3 sm:px-4 py-4 sm:py-6 shadow">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16 bg-gradient-to-r from-red-800 to-[#340510] px-3 sm:px-4 py-4 sm:py-6 shadow ">
         <div className="flex flex-col items-center text-white">
           <Image
             src="/landing/stats/1.svg"
