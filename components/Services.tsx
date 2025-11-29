@@ -13,52 +13,42 @@ export default function Services() {
   const services = [
     {
       id: 1,
-      title: "Contracting",
-      description:
-        "Majoka delivers high-quality contracting solutions, ensuring precision and reliability in every project.",
+      title: "Inspection",
+      description: [
+        "Vendor Inspection",
+        "Mechanical Inspection",
+        "Electrical Inspection",
+        "Civil Inspection",
+        "Factory Assessment",
+        "Factory Audit",
+        "Auditor Training",
+      ],
       icon: "/landing/services/6.svg",
       featured: true,
     },
     {
       id: 2,
       title: "Testing",
-      description:
-        "Majoka supplies high-quality materials and equipment through reliable trading services.",
+      description: [
+        "High-quality material testing",
+        "Certified equipment testing",
+        "Safety compliance testing",
+      ],
       icon: "/landing/services/1.svg",
       featured: false,
     },
     {
       id: 3,
       title: "Calibration",
-      description:
-        "Majoka offers precise calibration services to ensure equipment accuracy and reliability.",
+      description: [
+        "Precision calibration",
+        "Reliable measurement accuracy",
+        "Equipment performance validation",
+      ],
       icon: "/landing/services/2.svg",
       featured: false,
     },
-    {
-      id: 4,
-      title: "Inspection",
-      description:
-        "Majoka conducts detailed inspections to assess structural integrity and ensure safety compliance.",
-      icon: "/landing/services/3.svg",
-      featured: false,
-    },
-    {
-      id: 5,
-      title: "Trading",
-      description:
-        "Majoka supplies high-quality materials and equipment through reliable trading services.",
-      icon: "/landing/services/4.svg",
-      featured: false,
-    },
-    {
-      id: 6,
-      title: "Hotel",
-      description:
-        "Majoka provides comfortable accommodations and exceptional service at our modern hotel.",
-      icon: "/landing/services/5.svg",
-      featured: false,
-    },
+    // ...rest services
   ];
 
   return (
@@ -100,9 +90,18 @@ export default function Services() {
               </h3>
 
               {/* Description */}
-              <p className="text-base leading-relaxed mb-8 text-gray-600 group-hover:text-white/90 transition-colors duration-500">
-                {service.description}
-              </p>
+              <ul className="text-base leading-relaxed mb-8 text-gray-600 group-hover:text-white/90 transition-colors duration-500 space-y-2">
+                {Array.isArray(service.description) ? (
+                  service.description.map((point, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-pink-700 group-hover:bg-white"></span>
+                      <span>{point}</span>
+                    </li>
+                  ))
+                ) : (
+                  <li>{service.description}</li>
+                )}
+              </ul>
 
               {/* Get Started Button */}
               <button

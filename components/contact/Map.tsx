@@ -47,7 +47,7 @@ export default function MapSection() {
         });
 
         // Mecca, Saudi Arabia coordinates
-        const position: [number, number] = [21.4225, 39.8262];
+        const position: [number, number] = [21.3783941, 39.7881373];
 
         // Map control component to handle centering
         const MapController = ({

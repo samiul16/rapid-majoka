@@ -15,7 +15,7 @@ export default function Stats() {
             className="mb-2 sm:mb-4 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
           />
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">
-            20+
+            20
           </div>
           <div className="text-xs sm:text-sm md:text-base lg:text-lg text-center">
             Locations
@@ -31,7 +31,7 @@ export default function Stats() {
             className="mb-2 sm:mb-4 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
           />
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">
-            180+
+            30
           </div>
           <div className="text-xs sm:text-sm md:text-base lg:text-lg text-center">
             Projects
@@ -47,7 +47,7 @@ export default function Stats() {
             className="mb-2 sm:mb-4 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
           />
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">
-            20+
+            5
           </div>
           <div className="text-xs sm:text-sm md:text-base lg:text-lg text-center">
             Years of Experience
@@ -63,7 +63,7 @@ export default function Stats() {
             className="mb-2 sm:mb-4 w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
           />
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">
-            4k+
+            100+
           </div>
           <div className="text-xs sm:text-sm md:text-base lg:text-lg text-center">
             Architects

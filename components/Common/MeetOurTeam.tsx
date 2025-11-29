@@ -18,29 +18,44 @@ const WorkSteps = () => {
 
   const teamMembers = [
     {
-      name: "Yousuf Noor",
+      name: "Anait",
       position: "Chief Executive Officer (CEO) (Majoka Engineering)",
-      image: "/team-members/1.jpeg",
+      image: "/team-members/Anait.jpg",
     },
     {
-      name: "Abdulrahman Wasil",
+      name: "Ismail",
       position: "Project Manager (Majoka Engineering)",
-      image: "/team-members/2.jpeg",
+      image: "/team-members/Ismail.jpg",
     },
     {
-      name: "Ismail Noor",
+      name: "Luqman",
       position: "Project Management Specialist (Majoka Engineering)",
-      image: "/team-members/3.jpeg",
+      image: "/team-members/Luqman.jpg",
     },
     {
-      name: "Mohammed Noor",
+      name: "Mohammad Noor",
       position: "Chief Executive Officer (Majoka Engineering)",
-      image: "/team-members/4.png",
+      image: "/team-members/Mohammad Noor.jpg",
     },
     {
-      name: "Abdulrahman Noor",
+      name: "Nauman",
       position: "Project Management Specialist (Majoka Engineering)",
-      image: "/team-members/5.jpg",
+      image: "/team-members/NAUMAN.jpg",
+    },
+    {
+      name: "Rizwan",
+      position: "Project Management Specialist (Majoka Engineering)",
+      image: "/team-members/Rizwan.jpg",
+    },
+    {
+      name: "Tasawar",
+      position: "Project Management Specialist (Majoka Engineering)",
+      image: "/team-members/Tasawar.jpg",
+    },
+    {
+      name: "Younus",
+      position: "Project Management Specialist (Majoka Engineering)",
+      image: "/team-members/Younus.jpg",
     },
   ];
 
@@ -117,7 +132,7 @@ const WorkSteps = () => {
       {/* Team Members */}
       <div className="relative">
         {/* Team Members Grid */}
-        <div className="px-4 w-[97%] mx-auto relative">
+        <div className="px-4 w-[97%] mx-auto relative rounded-[32px]">
           {/* Navigation Arrows - Positioned relative to the grid */}
           <button
             onClick={handlePrevSlide}
@@ -214,12 +229,12 @@ const WorkSteps = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-xl sm:text-2xl font-bold text-white tracking-[-0.4px]">
+                  <h3 className="text-4xl sm:text-4xl text-center font-bold text-white tracking-[-0.4px]">
                     {member.name}
                   </h3>
-                  <p className="text-base sm:text-xl text-white">
+                  {/* <p className="text-base sm:text-xl text-white">
                     {member.position}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}
