@@ -28,7 +28,7 @@ const StatsSection = () => {
       id: 2,
       icon: Briefcase,
       value: 30,
-      suffix: "+",
+      suffix: "",
       label: "Projects",
     },
     {
