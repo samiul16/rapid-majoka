@@ -46,11 +46,11 @@ const ServicesContent = () => {
       name: "Inspection",
       title: "Inspection",
       description:
-        "Majoka Engineering provides extensive contracting services, executing top-notch construction and infrastructure projects across industrial, commercial, and residential sectors. Our expert engineers and project managers ensure accuracy, dependability, and compliance with safety regulations—fulfilling every client's vision on time and within budget.",
+        "Ensure the highest standards of quality, safety, and compliance with our comprehensive Inspection services. We cover a wide range of inspections across industries to help you identify risks, improve processes, and maintain operational excellence.",
       highlights: [
-        "Expert Construction: Roads, bridges, and high-rise buildings built with precision.",
-        "Green Innovations: Using eco-friendly materials and sustainable practices.",
-        "Smart Infrastructure: Integrating advanced technologies for safer, efficient cities.",
+        "Wide Coverage: Mechanical, Electrical, Civil, Factory inspections & audits",
+        "Expert Evaluation: Detect flaws and ensure compliance",
+        "Auditor Training: Equip your team with effective inspection skills.",
       ],
       services: [
         "Vendor Inspection",
@@ -67,11 +67,11 @@ const ServicesContent = () => {
       name: "Force & Torque Calibration",
       title: "Force & Torque Calibration",
       description:
-        "Majoka Testing Division ensures that all materials, structures, and components meet the highest international quality standards. Our advanced testing facilities and expert technicians help identify potential issues before they become costly problems.",
+        "Our Force & Torque services provide accurate measurement, calibration, and testing solutions to ensure reliability and safety in industrial applications. Using advanced equipment and expert techniques, we help you maintain optimal performance and compliance.",
       highlights: [
-        "Material Testing: Concrete, steel, and soil strength verification.",
-        "Non-Destructive Testing (NDT): Ensuring durability without damaging structures.",
-        "Quality Assurance: Strict adherence to ISO and ASTM standards.",
+        "Accurate Measurement: High-precision force and torque testing.",
+        "Reliable Calibration: Ensure your tools meet standard specifications.",
+        "Comprehensive Solutions: From gauges to universal testing machines, we cover it all.",
       ],
       services: [
         "Torque Calibrators",
@@ -91,11 +91,11 @@ const ServicesContent = () => {
       name: "Process Control Instrumentation",
       title: "Process Control Instrumentation",
       description:
-        "Majoka Calibration Services provides accurate calibration for industrial and laboratory equipment. With our certified experts and modern tools, we help businesses maintain precision, reliability, and compliance with regulatory standards.",
+        "Our Process Control Instrumentation services offer accurate monitoring, measurement, and calibration solutions for industrial processes. We ensure your systems operate safely, efficiently, and within regulatory standards using state-of-the-art instruments and expert techniques.",
       highlights: [
-        "Precision Calibration: For electrical, mechanical, and pressure instruments.",
-        "Certified Procedures: ISO/IEC 17025-compliant calibration.",
-        "Regular Maintenance: Scheduled calibration programs to ensure accuracy.",
+        "Precise Monitoring: Accurate measurement of pressure, temperature, flow, and level.",
+        "Reliable Calibration: Ensure all instruments meet industry standards.",
+        "Comprehensive Solutions: Safety devices, detectors, converters, and testing facilities included.",
       ],
       services: [
         "Pressure Transmitters",
@@ -119,11 +119,11 @@ const ServicesContent = () => {
       name: "Electrical & Electronics",
       title: "Electrical & Electronics",
       description:
-        "Majoka Inspection Services specializes in technical inspection and quality assurance across various industries. We ensure every project meets safety, performance, and compliance requirements through detailed assessments and expert reports.",
+        "Our Electrical & Electronics services provide precise testing, measurement, and calibration for a wide range of electrical and electronic equipment. We help ensure safety, performance, and compliance using advanced instruments and expert techniques.",
       highlights: [
-        "Comprehensive Inspections: From construction sites to industrial plants.",
-        "Safety Compliance: Adhering to local and international regulations.",
-        "Advanced Tools: Modern inspection technology for precise results.",
+        "Accurate Testing: For all digital, analogue, and high-voltage equipment.",
+        "Reliable Calibration: Maintain compliance and optimal performance.",
+        "Comprehensive Solutions: Covering multimeters, testers, power supplies, and detectors.",
       ],
       services: [
         "Digital & Analogue multimeters",
@@ -146,11 +146,11 @@ const ServicesContent = () => {
       name: "Lifting & Non-Destructive Equipment",
       title: "Lifting & Non-Destructive Equipment",
       description:
-        "Majoka Trading Division supplies high-quality materials and equipment that meet international standards. We maintain long-term relationships with trusted suppliers to ensure timely delivery and reliability in every order.",
+        "Our Lifting & Non-Destructive Equipment services ensure safety, reliability, and accuracy in industrial operations. From crane certification to advanced non-destructive testing instruments, we provide expert inspection, testing, and calibration solutions to enhance operational efficiency and compliance.",
       highlights: [
-        "Premium Quality Materials: Certified and durable.",
-        "Wide Range: Electrical, mechanical, and civil construction materials.",
-        "On-Time Supply: Efficient logistics across all regions.",
+        "Safe Lifting: Certification and inspection of cranes and lifting devices.",
+        "Precise Testing: Non-destructive equipment for accurate measurement and evaluation.",
+        "Comprehensive Solutions: Covering cranes, detectors, testers, meters, and instruments.",
       ],
       services: [
         "Crane Certification",
@@ -169,11 +169,11 @@ const ServicesContent = () => {
       name: "Pressure Systems",
       title: "Pressure Systems",
       description:
-        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+        "Our Pressure services offer precise measurement, monitoring, and calibration of pressure systems across industries. We help maintain operational efficiency, safety, and compliance using advanced instruments and expert techniques.",
       highlights: [
-        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
-        "Exceptional Service: Professional staff ensuring comfort and care.",
-        "Prime Location: Easy access to business and tourist hubs.",
+        "Precise Measurement: Accurate monitoring of pressure systems.",
+        "Reliable Calibration: Ensure instruments meet industry standards.",
+        "Comprehensive Solutions: Covering gauges, transmitters, valves, pumps, and compressors.",
       ],
       services: [
         "Pressure Elements",
@@ -191,11 +191,11 @@ const ServicesContent = () => {
       name: "Mechanical & Inspection Equipment",
       title: "Mechanical & Inspection Equipment",
       description:
-        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+        "Our Mechanical & Inspection Equipment services provide high-precision tools designed for testing, measurement, and inspection across industrial applications. From profile gauges to pressure testing facilities, we offer durable and accurate equipment to help maintain operational quality and compliance.",
       highlights: [
-        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
-        "Exceptional Service: Professional staff ensuring comfort and care.",
-        "Prime Location: Easy access to business and tourist hubs.",
+        "High Precision: Accurate tools for testing and inspection.",
+        "Durable Equipment: Built for industrial performance.",
+        "Wide Range: Covers gauges, testing tools, and inspection devices.",
       ],
       services: [
         "Mechanical Testing Equipment",
@@ -212,11 +212,11 @@ const ServicesContent = () => {
       name: "Weights",
       title: "Weights",
       description:
-        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+        "Our Weights service provides high-accuracy weighing scales, balances, and calibration weights for industrial, laboratory, and commercial use. We ensure precise measurements essential for testing, calibration, and quality control processes.",
       highlights: [
-        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
-        "Exceptional Service: Professional staff ensuring comfort and care.",
-        "Prime Location: Easy access to business and tourist hubs.",
+        "Accurate Weighing: Precision scales and balances.",
+        "Reliable Calibration: Supports industrial & lab standards.",
+        "Wide Variety: From top loads to dead weights.",
       ],
       services: [
         "Weights",
@@ -232,11 +232,11 @@ const ServicesContent = () => {
       name: "Gauge (Dial & Digital)",
       title: "Gauge (Dial & Digital)",
       description:
-        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+        "Our Gauge (Dial & Digital) services include precise measurement tools for industrial and laboratory applications. From specific gravity gauges to digital indicators, we ensure accuracy, reliability, and compliance with calibration standards.",
       highlights: [
-        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
-        "Exceptional Service: Professional staff ensuring comfort and care.",
-        "Prime Location: Easy access to business and tourist hubs.",
+        "High Accuracy: Reliable dial & digital measurement tools.",
+        "Wide Application: Supports pressure, load, and gravity testing.",
+        "Calibrated Performance: Ensures compliance with industry standards.",
       ],
       services: [
         "Specific Gravity Gauges",
@@ -252,11 +252,11 @@ const ServicesContent = () => {
       name: "Laboratories & Testing Services",
       title: "Laboratories & Testing Services",
       description:
-        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+        "Our Laboratory services provide complete testing, analysis, and evaluation for construction materials, soil, concrete, asphalt, water, and structural components. Using advanced equipment and internationally accepted standards, we deliver accurate and reliable results to support quality control, compliance, and project decision-making. We also provide specialized tests, field investigations, and non-destructive testing (NDT) services to assess material performance, structural integrity, durability, and site conditions.",
       highlights: [
-        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
-        "Exceptional Service: Professional staff ensuring comfort and care.",
-        "Prime Location: Easy access to business and tourist hubs.",
+        "Accurate Material Testing: Soil, concrete, asphalt, aggregates & more.",
+        "Advanced NDT Solutions: Structural integrity & durability evaluation.",
+        "Field & Site Expertise: On-site testing and investigation services.",
       ],
       services: [
         "Soil Testing",
@@ -289,6 +289,26 @@ const ServicesContent = () => {
         "Structure and Foundation Testing",
         "Brick & Block Testing",
         "Site Investigation",
+      ],
+    },
+    {
+      id: 11,
+      name: "Calibration",
+      title: "Calibration",
+      description:
+        "Our Calibration services ensure the accuracy, reliability, and compliance of your measurement instruments across mechanical, electrical, pressure, temperature, and industrial applications. Using certified equipment and international calibration standards, we provide precise results that help maintain product quality, safety, and operational efficiency. Whether it's gauges, electrical meters, measurement tools, or industrial testing devices—our expert calibration solutions guarantee consistent performance and full traceability.",
+      highlights: [
+        "High Accuracy: Certified calibration for industrial instruments.",
+        "Wide Range: Mechanical, electrical, pressure, temperature & more.",
+        "Compliance Ready: Meets international standards and traceability requirements.",
+      ],
+      services: [
+        "Specific Gravity Gauges",
+        "Load Gauges Calibration",
+        "Pressure Calibration",
+        "Dial Gauge Indicators",
+        "Digital Gauge Indicators",
+        "Others",
       ],
     },
   ];
