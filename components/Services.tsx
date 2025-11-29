@@ -35,11 +35,12 @@ export default function Services() {
         "Torque Gauges",
         "Load Cells",
         "Force Gauges",
-        "Universal Testing machines up to 60T",
+
         "Tension Gauges",
         "Compression Machines",
         "Tensile Testing Machines",
         "Hydraulic Jacks",
+        "Universal Testing machines up to 60T",
       ],
       icon: "/landing/services/1.svg",
       featured: true,
@@ -243,7 +244,7 @@ export default function Services() {
 
               {/* Description */}
               <div className="flex-grow">
-                <ul className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-sm leading-relaxed mb-6 text-gray-600 group-hover:text-white/90 transition-colors duration-500">
+                <ul className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-sm leading-relaxed mb-6 text-gray-800 group-hover:text-white/90 transition-colors duration-500">
                   {Array.isArray(service.description) ? (
                     service.description.map((point, index) => (
                       <li
@@ -251,7 +252,7 @@ export default function Services() {
                         className="flex items-start gap-2 text-left"
                       >
                         <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-pink-700 group-hover:bg-white flex-shrink-0"></span>
-                        <span className="text-xs">{point}</span>
+                        <span className="text-md">{point}</span>
                       </li>
                     ))
                   ) : (
