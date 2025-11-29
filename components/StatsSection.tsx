@@ -47,6 +47,8 @@ const StatsSection = () => {
     },
   ];
 
+  console.log("");
+
   return (
     <>
       <div className="relative w-full h-[400px] lg:h-72 overflow-hidden">
