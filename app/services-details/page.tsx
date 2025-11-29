@@ -478,7 +478,7 @@ const ServicesContent = () => {
                 <Image
                   fill
                   className="w-full h-full object-cover"
-                  src={`/Cetagory/${currentService?.name}.png`}
+                  src={`/Catagory/${currentService?.name}.png`}
                   alt={currentService?.title || "Service"}
                 />
               </div>
