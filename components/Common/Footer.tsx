@@ -149,11 +149,11 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services-details?service=5"
+                  href="/services-details?service=1"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
-                  Trading
+                  Inspection
                 </Link>
               </li>
             </ul>
@@ -220,38 +220,38 @@ export default function Footer() {
             <ul className="space-y-3 flex-grow">
               <li>
                 <Link
-                  href="/services-details?service=1"
+                  href="/services-details?service=8"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
-                  Contracting
+                  Weights
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services-details?service=2"
+                  href="/services-details?service=6"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
-                  Testing
+                  Pressure Systems
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services-details?service=3"
+                  href="/services-details?service=9"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
-                  Calibration
+                  Gauge
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services-details?service=4"
+                  href="/services-details?service=10"
                   className="flex items-center gap-2 text-white text-base hover:text-red-300 transition-colors"
                 >
                   <ChevronRight className="w-4 h-4 flex-shrink-0" />
-                  Inspection
+                  Laboratories
                 </Link>
               </li>
             </ul>
@@ -286,7 +286,7 @@ export default function Footer() {
                   href="mailto:info@majokaengineering.com"
                   className="text-white text-base hover:text-red-300 transition-colors break-all"
                 >
-                info@majokaengineering.com
+                  info@majokaengineering.com
                 </Link>
               </div>
             </div>

@@ -7,12 +7,20 @@ const AllGallery = () => {
 
   // Gallery images data
   const galleryImages = [
-    { id: 1, src: "/gallery/1.jpg", alt: "Construction Project 1" },
-    { id: 2, src: "/gallery/2.jpg", alt: "Construction Project 2" },
-    { id: 3, src: "/gallery/3.jpg", alt: "Construction Project 3" },
-    { id: 4, src: "/gallery/4.jpg", alt: "Construction Project 4" },
-    { id: 5, src: "/gallery/5.jpg", alt: "Construction Project 5" },
-    { id: 6, src: "/gallery/6.jpg", alt: "Construction Project 6" },
+    { id: 1, src: "/Catagory/Calibration.png", alt: "Construction Project 1" },
+    { id: 2, src: "/Catagory/Force.png", alt: "Construction Project 2" },
+    { id: 3, src: "/Catagory/Inspection.png", alt: "Construction Project 3" },
+    {
+      id: 4,
+      src: "/Catagory/Gauge-Dial-Digital.png",
+      alt: "Construction Project 4",
+    },
+    {
+      id: 5,
+      src: "/Catagory/Pressure Systems.png",
+      alt: "Construction Project 5",
+    },
+    { id: 6, src: "/Catagory/Weights.png", alt: "Construction Project 6" },
   ];
 
   const loadMoreImages = () => {
