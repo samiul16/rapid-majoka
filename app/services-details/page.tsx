@@ -34,7 +34,7 @@ const ServicesContent = () => {
     const serviceId = searchParams.get("service");
     if (serviceId) {
       const id = parseInt(serviceId);
-      if (id >= 1 && id <= 6) {
+      if (id >= 1 && id <= 10) {
         setActiveService(id);
       }
     }
@@ -43,8 +43,8 @@ const ServicesContent = () => {
   const servicesData: Service[] = [
     {
       id: 1,
-      name: "Contracting",
-      title: "Contracting",
+      name: "Inspection",
+      title: "Inspection",
       description:
         "Majoka Engineering provides extensive contracting services, executing top-notch construction and infrastructure projects across industrial, commercial, and residential sectors. Our expert engineers and project managers ensure accuracy, dependability, and compliance with safety regulations—fulfilling every client's vision on time and within budget.",
       highlights: [
@@ -53,20 +53,19 @@ const ServicesContent = () => {
         "Smart Infrastructure: Integrating advanced technologies for safer, efficient cities.",
       ],
       services: [
-        "Civil Work",
-        "Electrical Work",
-        "Mechanical Work",
-        "Surveying",
-        "Scaffolding Services",
-        "Scaffolding Rental",
-        "Manpower Supply Services",
-        "Equipment Rental",
+        "Vendor Inspection",
+        "Mechanical Inspection",
+        "Electrical Inspection",
+        "Civil Inspection",
+        "Factory Assessment",
+        "Factory Audit",
+        "Auditor Training",
       ],
     },
     {
       id: 2,
-      name: "Testing",
-      title: "Testing",
+      name: "Force & Torque Calibration",
+      title: "Force & Torque Calibration",
       description:
         "Majoka Testing Division ensures that all materials, structures, and components meet the highest international quality standards. Our advanced testing facilities and expert technicians help identify potential issues before they become costly problems.",
       highlights: [
@@ -75,16 +74,22 @@ const ServicesContent = () => {
         "Quality Assurance: Strict adherence to ISO and ASTM standards.",
       ],
       services: [
-        "Concrete & Soil Testing",
-        "Steel Quality Tests",
-        "Welding Inspection",
-        "NDT Services",
+        "Torque Calibrators",
+        "Torque Wrenches",
+        "Torque Gauges",
+        "Load Cells",
+        "Force Gauges",
+        "Tension Gauges",
+        "Compression Machines",
+        "Tensile Testing Machines",
+        "Hydraulic Jacks",
+        "Universal Testing machines up to 60T",
       ],
     },
     {
       id: 3,
-      name: "Calibration",
-      title: "Calibration",
+      name: "Process Control Instrumentation",
+      title: "Process Control Instrumentation",
       description:
         "Majoka Calibration Services provides accurate calibration for industrial and laboratory equipment. With our certified experts and modern tools, we help businesses maintain precision, reliability, and compliance with regulatory standards.",
       highlights: [
@@ -93,16 +98,26 @@ const ServicesContent = () => {
         "Regular Maintenance: Scheduled calibration programs to ensure accuracy.",
       ],
       services: [
-        "Pressure Gauge Calibration",
-        "Electrical Instrument Calibration",
-        "Temperature & Humidity Calibration",
-        "Flow & Dimensional Calibration",
+        "Pressure Transmitters",
+        "Temperature Transmitters",
+        "Level Transmitters",
+        "Flow Transmitters",
+        "Volumetric Measurements",
+        "Auto Label",
+        "Safety Relief Valves",
+        "I/P Converters",
+        "Multi gas Detectors",
+        "Anemometers",
+        "Tachometers",
+        "Densitometers",
+        "Hydro testing Facilities",
+        "Tension & Accessory Calibrators",
       ],
     },
     {
       id: 4,
-      name: "Inspection",
-      title: "Inspection",
+      name: "Electrical & Electronics",
+      title: "Electrical & Electronics",
       description:
         "Majoka Inspection Services specializes in technical inspection and quality assurance across various industries. We ensure every project meets safety, performance, and compliance requirements through detailed assessments and expert reports.",
       highlights: [
@@ -111,16 +126,25 @@ const ServicesContent = () => {
         "Advanced Tools: Modern inspection technology for precise results.",
       ],
       services: [
-        "Structural Inspection",
-        "Welding & Pipeline Inspection",
-        "Safety Audit & Compliance",
-        "Equipment Inspection",
+        "Digital & Analogue multimeters",
+        "Clamp meters",
+        "Insulation testers",
+        "Earth resistance testers",
+        "Ohm meters",
+        "Ampere meters",
+        "High voltage testers",
+        "Frequency meters",
+        "Volt meters",
+        "Power supplies",
+        "Digital Earth Testers",
+        "Megger Testers",
+        "High Voltage Porosity Detectors",
       ],
     },
     {
       id: 5,
-      name: "Trading",
-      title: "Trading",
+      name: "Lifting & Non-Destructive Equipment",
+      title: "Lifting & Non-Destructive Equipment",
       description:
         "Majoka Trading Division supplies high-quality materials and equipment that meet international standards. We maintain long-term relationships with trusted suppliers to ensure timely delivery and reliability in every order.",
       highlights: [
@@ -129,16 +153,21 @@ const ServicesContent = () => {
         "On-Time Supply: Efficient logistics across all regions.",
       ],
       services: [
-        "Construction Materials",
-        "Safety Equipment",
-        "Electrical & Mechanical Components",
-        "Tools and Hardware",
+        "Crane Certification",
+        "JIB Cranes",
+        "Ultrasonic Flow Detectors",
+        "Hardness Testers",
+        "MPT Yokes",
+        "PMI Equipment",
+        "Lux Meters",
+        "Stop Watches",
+        "Sound Level Meters",
       ],
     },
     {
       id: 6,
-      name: "Hotel",
-      title: "Hotel",
+      name: "Pressure Systems",
+      title: "Pressure Systems",
       description:
         "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
       highlights: [
@@ -147,9 +176,119 @@ const ServicesContent = () => {
         "Prime Location: Easy access to business and tourist hubs.",
       ],
       services: [
-        "Room Booking & Event Hosting",
-        "Corporate Packages",
-        "Dining & Catering Services",
+        "Pressure Elements",
+        "Pressure Transmitters",
+        "Pressure Gauges",
+        "Pressure Safety Valves",
+        "Manometers",
+        "Pressure Recorders",
+        "Hydraulic & Pneumatic Pumps",
+        "Air Compressors",
+      ],
+    },
+    {
+      id: 7,
+      name: "Mechanical & Inspection Equipment",
+      title: "Mechanical & Inspection Equipment",
+      description:
+        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+      highlights: [
+        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
+        "Exceptional Service: Professional staff ensuring comfort and care.",
+        "Prime Location: Easy access to business and tourist hubs.",
+      ],
+      services: [
+        "Mechanical Testing Equipment",
+        "Mechanical Measuring Equipment",
+        "Pressure Testing Facilities",
+        "Inspection Tools",
+        "Profile Gauges",
+        "Gauge Block Sets",
+        "Slip Gauges",
+      ],
+    },
+    {
+      id: 8,
+      name: "Weights",
+      title: "Weights",
+      description:
+        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+      highlights: [
+        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
+        "Exceptional Service: Professional staff ensuring comfort and care.",
+        "Prime Location: Easy access to business and tourist hubs.",
+      ],
+      services: [
+        "Weights",
+        "Weighing Scales",
+        "Balances",
+        "Top Loads",
+        "Dead Weights",
+        "Other Types of Balances",
+      ],
+    },
+    {
+      id: 9,
+      name: "Gauge (Dial & Digital)",
+      title: "Gauge (Dial & Digital)",
+      description:
+        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+      highlights: [
+        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
+        "Exceptional Service: Professional staff ensuring comfort and care.",
+        "Prime Location: Easy access to business and tourist hubs.",
+      ],
+      services: [
+        "Specific Gravity Gauges",
+        "Load Gauges Calibration",
+        "Pressure Calibration",
+        "Dial Gauge Indicators",
+        "Digital Gauge Indicators",
+        "Others",
+      ],
+    },
+    {
+      id: 10,
+      name: "Laboratories & Testing Services",
+      title: "Laboratories & Testing Services",
+      description:
+        "Majoka Hotel & Hospitality offers a relaxing environment with top-notch service, designed to make every guest's stay memorable. From luxurious rooms to fine dining and business facilities, we combine comfort with convenience for both leisure and corporate travelers.",
+      highlights: [
+        "Modern Facilities: Stylish rooms, Wi-Fi, and 24/7 support.",
+        "Exceptional Service: Professional staff ensuring comfort and care.",
+        "Prime Location: Easy access to business and tourist hubs.",
+      ],
+      services: [
+        "Soil Testing",
+        "Aggregate Testing",
+        "Concrete Testing",
+        "Cement Testing",
+        "Asphalt and Binder Testing",
+        "Chemical & Water Testing",
+        "Petro graphic Analysis",
+        "Rock and Rock Foundation Testing",
+        "Mortar Testing",
+        "Bitumen Testing",
+        "Super pave Testing",
+        "Field Testing by NDG",
+        "Field Testing by Electrical Density Gauge",
+        "Pavement Investigation",
+        "Asphalt Mix Design",
+        "Other special test based on client requirements",
+        "Concrete Structure Inspection and failure assessment",
+        "Structural Integrity, defect and voids in concrete & rock",
+        "Durability Assessment of Reinforced concrete Structure",
+        "NDT Compression test by Schmidt Hammer",
+        "NDT by Pulse Velocity for concrete",
+        "Core Drilling",
+        "Steel Rebar Testing",
+        "Rebar Locator & cover distance measurement",
+        "Pull off Test",
+        "Concrete coating Thickness measurement",
+        "Concrete Mix Design",
+        "Structure and Foundation Testing",
+        "Brick & Block Testing",
+        "Site Investigation",
       ],
     },
   ];
@@ -190,13 +329,14 @@ const ServicesContent = () => {
                       }`}
                     >
                       <span
-                        className={`text-lg leading-7 ${
+                        className={`text-lg leading-7 text-left ${
                           activeService === service.id
                             ? "text-white font-bold"
                             : "text-stone-900 font-medium"
                         }`}
                       >
-                        0{service.id}. {service.name}
+                        {service.id < 10 ? `0${service.id}` : service.id}.{" "}
+                        {service.name}
                       </span>
                       <div
                         className={`w-8 h-8 rounded-full flex justify-center items-center transition-all duration-300 flex-shrink-0 ${
