@@ -16,6 +16,7 @@ interface Service {
   description: string;
   highlights: string[];
   services: string[];
+  image: string;
 }
 
 const ServicesContent = () => {
@@ -61,6 +62,7 @@ const ServicesContent = () => {
         "Factory Audit",
         "Auditor Training",
       ],
+      image: "Inspection",
     },
     {
       id: 2,
@@ -85,6 +87,7 @@ const ServicesContent = () => {
         "Hydraulic Jacks",
         "Universal Testing machines up to 60T",
       ],
+      image: "Force",
     },
     {
       id: 3,
@@ -113,6 +116,7 @@ const ServicesContent = () => {
         "Hydro testing Facilities",
         "Tension & Accessory Calibrators",
       ],
+      image: "Process Control Instrumentation",
     },
     {
       id: 4,
@@ -140,6 +144,7 @@ const ServicesContent = () => {
         "Megger Testers",
         "High Voltage Porosity Detectors",
       ],
+      image: "Electrical-Electronics",
     },
     {
       id: 5,
@@ -163,6 +168,7 @@ const ServicesContent = () => {
         "Stop Watches",
         "Sound Level Meters",
       ],
+      image: "Lifting-Non-Destructive-Equipment",
     },
     {
       id: 6,
@@ -185,6 +191,7 @@ const ServicesContent = () => {
         "Hydraulic & Pneumatic Pumps",
         "Air Compressors",
       ],
+      image: "Pressure Systems",
     },
     {
       id: 7,
@@ -206,6 +213,7 @@ const ServicesContent = () => {
         "Gauge Block Sets",
         "Slip Gauges",
       ],
+      image: "Mechanical-Inspection-Equipment",
     },
     {
       id: 8,
@@ -226,6 +234,7 @@ const ServicesContent = () => {
         "Dead Weights",
         "Other Types of Balances",
       ],
+      image: "Weights",
     },
     {
       id: 9,
@@ -246,6 +255,7 @@ const ServicesContent = () => {
         "Digital Gauge Indicators",
         "Others",
       ],
+      image: "Gauge-Dial-Digital",
     },
     {
       id: 10,
@@ -290,6 +300,7 @@ const ServicesContent = () => {
         "Brick & Block Testing",
         "Site Investigation",
       ],
+      image: "Laboratories-Testing-Services",
     },
     {
       id: 11,
@@ -310,6 +321,7 @@ const ServicesContent = () => {
         "Digital Gauge Indicators",
         "Others",
       ],
+      image: "Calibration",
     },
   ];
 
@@ -478,7 +490,7 @@ const ServicesContent = () => {
                 <Image
                   fill
                   className="w-full h-full object-cover"
-                  src={`/Catagory/${currentService?.name}.png`}
+                  src={`/Catagory/${currentService?.image}.png`}
                   alt={currentService?.title || "Service"}
                 />
               </div>
