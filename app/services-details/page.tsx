@@ -57,7 +57,7 @@ const ServicesContent = () => {
         "Industry Expertise: Specialists for construction, oil & gas, MEP, logistics, and industrial sectors.",
       ],
       services: [],
-      image: "Inspection",
+      image: "Manpower Supply",
     },
     {
       id: 2,
@@ -71,7 +71,7 @@ const ServicesContent = () => {
         "Flexible Rental Plans: Daily, weekly, monthly, and project-based rental options.",
       ],
       services: [],
-      image: "Force",
+      image: "Equipment Rental",
     },
     {
       id: 3,
@@ -85,7 +85,7 @@ const ServicesContent = () => {
         "Flexible Rental Plans: Short-term, long-term, and project-based rental options.",
       ],
       services: [],
-      image: "Process Control Instrumentation",
+      image: "Scaffolding Rental",
     },
     {
       id: 4,
@@ -112,7 +112,7 @@ const ServicesContent = () => {
           ],
         },
       ],
-      image: "Electrical-Electronics",
+      image: "Inspection Services",
     },
     {
       id: 5,
@@ -291,7 +291,7 @@ const ServicesContent = () => {
           ],
         },
       ],
-      image: "Lifting-Non-Destructive-Equipment",
+      image: "Soil Testing Laboratories",
     },
     {
       id: 7,
@@ -310,7 +310,7 @@ const ServicesContent = () => {
           services: [],
         },
       ],
-      image: "Lifting-Non-Destructive-Equipment",
+      image: "General Trading",
     },
   ];
 

@@ -67,11 +67,12 @@ const News = () => {
     },
     {
       id: 2,
-      title: "Precision Matters: Force & Torque Testing Solutions",
-      category: "Force & Torque",
+      title: "Precision Matters: Force Torque Testing Solutions",
+      category: "Force Torque",
       excerpt:
         "Force and torque measurement is vital for industrial efficiency and safety. Our services include calibration of torque wrenches, gauges, load cells, and testing machines. Accurate testing ensures equipment reliability and product quality. Expert evaluation and precise calibration support optimal performance in all applications.",
-      image: "/news/Force & Torque Testing Solutions.png",
+      image:
+        "/news/Laboratories Material Testing Ensuring Structural Integrity.png",
       date: generateDynamicDate(10), // 10 days ago
     },
     {
@@ -91,8 +92,7 @@ const News = () => {
       category: "Electrical & Electronics",
       excerpt:
         "Accurate testing of electrical and electronic systems prevents failures and ensures safety. Digital & analogue multimeters, high-voltage testers, and power supplies are calibrated to meet industry standards. Our services enhance system reliability and operational efficiency. Expert solutions help businesses stay compliant and efficient.",
-      image:
-        "/news/Electrical & Electronics Testing for Reliable Operations.png",
+      image: "/news/Electrical Electronics Testing for Reliable Operations.png",
       date: generateDynamicDate(20), // 20 days ago
     },
     {
@@ -102,7 +102,7 @@ const News = () => {
       excerpt:
         "Comprehensive laboratory testing is essential for construction and industrial projects. Soil, concrete, asphalt, and chemical testing guarantee quality and safety. Structural integrity assessment, NDT, and field investigations help detect defects and evaluate durability. Our advanced labs deliver accurate, reliable results for informed decisions.",
       image:
-        "/news/Laboratories & Material Testing Ensuring Structural Integrity.png",
+        "/news/Laboratories Material Testing Ensuring Structural Integrity.png",
       date: generateDynamicDate(25), // 25 days ago
     },
     {
@@ -111,8 +111,7 @@ const News = () => {
       category: "Mechanical & Inspection Equipment",
       excerpt:
         " Safe lifting operations and precise mechanical testing are key to industrial efficiency. From crane certification to hardness testers and universal testing machines, our services cover it all. Non-destructive testing ensures structural reliability without damage. Trust our solutions for accurate assessment, operational safety, and compliance.",
-      image:
-        "/news/Lifting Non-Destructive Equipment & Mechanical Solutions.png",
+      image: "/news/Lifting Non-Destructive Equipment Mechanical Solutions.png",
       date: generateDynamicDate(30), // 30 days ago
     },
   ];
