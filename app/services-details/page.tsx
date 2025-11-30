@@ -241,7 +241,7 @@ const ServicesContent = () => {
           ],
         },
       ],
-      image: "Lifting-Non-Destructive-Equipment",
+      image: "Calibration",
     },
     {
       id: 6,

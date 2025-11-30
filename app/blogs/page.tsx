@@ -35,12 +35,12 @@ const News = () => {
 
   const categories = [
     "All Categories",
-    "Architectural",
-    "Civil Engineering",
-    "Auto CAD",
-    "Distributed Ledger Technology",
-    "Construction Insights",
-    "Construction Industries",
+    "Inspection",
+    "Force & Torque",
+    "Process Control Instrumentation",
+    "Electrical & Electronics",
+    "Laboratories",
+    "Mechanical & Inspection Equipment",
   ];
 
   // Helper function to generate dynamic dates (past dates)
@@ -57,56 +57,62 @@ const News = () => {
   const newsArticles: NewsArticle[] = [
     {
       id: 1,
-      title: "Building the Future: Innovations in Civil Engineering",
-      category: "Civil Engineering",
+      title: "Ensuring Quality with Comprehensive Inspection Services",
+      category: "Inspection",
       excerpt:
-        "Explore the latest technologies and methods transforming civil engineering projects — from sustainable materials to smart infrastructure solutions.",
-      image: "/news/news-1.png",
+        "Inspection services are crucial for maintaining safety, quality, and compliance across industries. From vendor checks to factory audits, thorough inspections help identify risks early. Mechanical, electrical, and civil inspections ensure your operations run smoothly. With expert auditors and systematic processes, businesses gain confidence in every aspect of production.",
+      image:
+        "/news/Ensuring Quality with Comprehensive Inspection Services.png",
       date: generateDynamicDate(5), // 5 days ago
     },
     {
       id: 2,
-      title: "Strength and Safety: Best Practices in Civil Engineering",
-      category: "Civil Engineering",
+      title: "Precision Matters: Force & Torque Testing Solutions",
+      category: "Force & Torque",
       excerpt:
-        "Learn how modern engineering practices ensure structural integrity, safety, and long-lasting performance in large-scale civil projects.",
-      image: "/news/news-2.png",
+        "Force and torque measurement is vital for industrial efficiency and safety. Our services include calibration of torque wrenches, gauges, load cells, and testing machines. Accurate testing ensures equipment reliability and product quality. Expert evaluation and precise calibration support optimal performance in all applications.",
+      image: "/news/Force & Torque Testing Solutions.png",
       date: generateDynamicDate(10), // 10 days ago
     },
     {
       id: 3,
-      title: "Designing Spaces: Trends in Modern Architecture",
-      category: "Architectural",
+      title:
+        "Advanced Process Control Instrumentation for Industrial Efficiency",
+      category: "Process Control Instrumentation",
       excerpt:
-        "Discover how innovative design, functionality, and sustainability are shaping the architecture of tomorrow.",
-      image: "/news/news-3.png",
+        "Process control instrumentation monitors and regulates critical processes accurately. Pressure, temperature, flow, and level transmitters help maintain operational stability. Safety devices, converters, and detectors enhance compliance and efficiency. Our solutions provide reliable, real-time control for diverse industrial systems.",
+      image:
+        "/news/Advanced Process Control Instrumentation for Industrial Efficiency.png",
       date: generateDynamicDate(15), // 15 days ago
     },
     {
       id: 4,
-      title: "Blending Form and Function: Architectural Excellence",
-      category: "Architectural",
+      title: "Electrical & Electronics Testing for Reliable Operations",
+      category: "Electrical & Electronics",
       excerpt:
-        "A deep dive into projects where aesthetics meet practicality, highlighting the importance of planning, design, and creativity.",
-      image: "/news/news-4.png",
+        "Accurate testing of electrical and electronic systems prevents failures and ensures safety. Digital & analogue multimeters, high-voltage testers, and power supplies are calibrated to meet industry standards. Our services enhance system reliability and operational efficiency. Expert solutions help businesses stay compliant and efficient.",
+      image:
+        "/news/Electrical & Electronics Testing for Reliable Operations.png",
       date: generateDynamicDate(20), // 20 days ago
     },
     {
       id: 5,
-      title: "Driving Efficiency: Modern Construction Techniques",
-      category: "Construction Industries",
+      title: "Laboratories & Material Testing: Ensuring Structural Integrity",
+      category: "Laboratories",
       excerpt:
-        "Explore how technology, project management, and skilled teams are revolutionizing construction workflows and timelines.",
-      image: "/news/news-1.png",
+        "Comprehensive laboratory testing is essential for construction and industrial projects. Soil, concrete, asphalt, and chemical testing guarantee quality and safety. Structural integrity assessment, NDT, and field investigations help detect defects and evaluate durability. Our advanced labs deliver accurate, reliable results for informed decisions.",
+      image:
+        "/news/Laboratories & Material Testing Ensuring Structural Integrity.png",
       date: generateDynamicDate(25), // 25 days ago
     },
     {
       id: 6,
-      title: "Sustainability in Construction: Building a Greener Future",
-      category: "Construction Industries",
+      title: "Lifting, Non-Destructive Equipment & Mechanical Solutions",
+      category: "Mechanical & Inspection Equipment",
       excerpt:
-        " Learn how eco-friendly materials, energy-efficient designs, and responsible practices are reshaping the construction industry.",
-      image: "/news/news-2.png",
+        " Safe lifting operations and precise mechanical testing are key to industrial efficiency. From crane certification to hardness testers and universal testing machines, our services cover it all. Non-destructive testing ensures structural reliability without damage. Trust our solutions for accurate assessment, operational safety, and compliance.",
+      image:
+        "/news/Lifting Non-Destructive Equipment & Mechanical Solutions.png",
       date: generateDynamicDate(30), // 30 days ago
     },
   ];
