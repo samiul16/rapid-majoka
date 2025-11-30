@@ -56,7 +56,21 @@ const ServicesContent = () => {
         "Flexible Deployment: Short-term, long-term, or project-based manpower as needed.",
         "Industry Expertise: Specialists for construction, oil & gas, MEP, logistics, and industrial sectors.",
       ],
-      services: [],
+      services: [
+        {
+          name: "",
+          services: [
+            "Monthly Services",
+            "Hourly Domestic Worker Services",
+            "Maintenance Services",
+            "Mediation Services",
+            "Corporate Sector Services- Construction",
+            "Healthcare",
+            "Logistics",
+            "Oil & Gas",
+          ],
+        },
+      ],
       image: "Manpower Supply",
     },
     {
