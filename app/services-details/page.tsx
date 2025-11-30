@@ -58,17 +58,17 @@ const ServicesContent = () => {
       ],
       services: [
         {
-          name: "",
+          name: "Individual/Domestic Help Services",
           services: [
             "Monthly Services",
             "Hourly Domestic Worker Services",
             "Maintenance Services",
             "Mediation Services",
-            "Corporate Sector Services- Construction",
-            "Healthcare",
-            "Logistics",
-            "Oil & Gas",
           ],
+        },
+        {
+          name: "Corporate Sector Services",
+          services: ["Construction", "Healthcare", "Logistics", "Oil & Gas"],
         },
       ],
       image: "Manpower Supply",
