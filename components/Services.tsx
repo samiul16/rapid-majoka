@@ -13,193 +13,66 @@ export default function Services() {
   const services = [
     {
       id: 1,
-      title: "Inspection",
-      description: [
-        "Vendor Inspection",
-        "Mechanical Inspection",
-        "Electrical Inspection",
-        "Civil Inspection",
-        "Factory Assessment",
-        "Factory Audit",
-        "Auditor Training",
-      ],
+      title: "Manpower Supply",
+      description:
+        "We provide skilled, semi-skilled, and unskilled manpower for construction, engineering, industrial, and facility projects.",
       icon: "/landing/services/6.svg",
       featured: true,
     },
     {
       id: 2,
-      title: "Force & Torque Calibration",
-      description: [
-        "Torque Calibrators",
-        "Torque Wrenches",
-        "Torque Gauges",
-        "Load Cells",
-        "Force Gauges",
-
-        "Tension Gauges",
-        "Compression Machines",
-        "Tensile Testing Machines",
-        "Hydraulic Jacks",
-        "Universal Testing machines up to 60T",
-      ],
+      title: "Equipment Rental",
+      description:
+        "Reliable and well-maintained equipment rental solutions for construction, industrial, and project needs — delivered on time, every time.",
       icon: "/landing/services/1.svg",
       featured: true,
     },
     {
       id: 3,
-      title: "Process Control Instrumentation",
-      description: [
-        "Pressure Transmitters",
-        "Temperature Transmitters",
-        "Level Transmitters",
-        "Flow Transmitters",
-        "Volumetric Measurements",
-        "Auto Label",
-        "Safety Relief Valves",
-        "I/P Converters",
-        "Multi gas Detectors",
-        "Anemometers",
-        "Tachometers",
-        "Densitometers",
-        "Hydro testing Facilities",
-        "Tension & Accessory Calibrators",
-      ],
+      title: "Scaffolding Rental",
+      description:
+        "Safe, durable, and fully certified scaffolding rental solutions for construction, maintenance, and industrial projects.",
       icon: "/landing/services/2.svg",
       featured: true,
     },
     {
       id: 4,
-      title: "Electrical & Electronics",
-      description: [
-        "Digital & Analogue multimeters",
-        "Clamp meters",
-        "Insulation testers",
-        "Earth resistance testers",
-        "Ohm meters",
-        "Ampere meters",
-        "High voltage testers",
-        "Frequency meters",
-        "Volt meters",
-        "Power supplies",
-        "Digital Earth Testers",
-        "Megger Testers",
-        "High Voltage Porosity Detectors",
-      ],
+      title: "General Trading",
+      description:
+        "Reliable general trading solutions providing high-quality materials, equipment, and supplies through a strong and trusted global network.",
       icon: "/landing/services/3.svg",
       featured: true,
     },
     {
       id: 5,
-      title: "Lifting & Non-Destructive Equipment",
-      description: [
-        "Crane Certification",
-        "JIB Cranes",
-        "Ultrasonic Flow Detectors",
-        "Hardness Testers",
-        "MPT Yokes",
-        "PMI Equipment",
-        "Lux Meters",
-        "Stop Watches",
-        "Sound Level Meters",
-      ],
+      title: "Calibration",
+      description:
+        "Accurate and reliable calibration services for all industrial measuring instruments.",
       icon: "/landing/services/4.svg",
       featured: true,
     },
     {
       id: 6,
-      title: "Pressure Systems",
-      description: [
-        "Pressure Elements",
-        "Pressure Transmitters",
-        "Pressure Gauges",
-        "Pressure Safety Valves",
-        "Manometers",
-        "Pressure Recorders",
-        "Hydraulic & Pneumatic Pumps",
-        "Air Compressors",
-      ],
+      title: "Soil Testing Laboratories",
+      description:
+        "Comprehensive laboratory testing solutions for materials, structures, and site investigations.",
       icon: "/landing/services/5.svg",
       featured: true,
     },
     {
       id: 7,
-      title: "Mechanical & Inspection Equipment",
-      description: [
-        "Mechanical Testing Equipment",
-        "Mechanical Measuring Equipment",
-        "Pressure Testing Facilities",
-        "Inspection Tools",
-        "Profile Gauges",
-        "Gauge Block Sets",
-        "Slip Gauges",
-      ],
+      title: "Inspection Services",
+      description:
+        "Ensure quality, safety, and compliance with our expert inspection services.",
       icon: "/landing/services/6.svg",
       featured: true,
     },
     {
       id: 8,
-      title: "Weights",
-      description: [
-        "Weights",
-        "Weighing Scales",
-        "Balances",
-        "Top Loads",
-        "Dead Weights",
-        "Other Types of Balances",
-      ],
+      title: "Civil and MEP works",
+      description:
+        "Comprehensive Civil and MEP works delivering reliable construction, installation, and maintenance solutions for commercial, industrial, and residential projects.",
       icon: "/landing/services/1.svg",
-      featured: true,
-    },
-    {
-      id: 9,
-      title: "Gauge (Dial & Digital)",
-      description: [
-        "Specific Gravity Gauges",
-        "Load Gauges Calibration",
-        "Pressure Calibration",
-        "Dial Gauge Indicators",
-        "Digital Gauge Indicators",
-        "Others",
-      ],
-      icon: "/landing/services/2.svg",
-      featured: true,
-    },
-    {
-      id: 10,
-      title: "Laboratories & Testing Services",
-      description: [
-        "Soil Testing",
-        "Aggregate Testing",
-        "Concrete Testing",
-        "Cement Testing",
-        "Asphalt and Binder Testing",
-        "Chemical & Water Testing",
-        "Petro graphic Analysis",
-        "Rock and Rock Foundation Testing",
-        "Mortar Testing",
-        "Bitumen Testing",
-        "Super pave Testing",
-        "Field Testing by NDG",
-        "Field Testing by Electrical Density Gauge",
-        "Pavement Investigation",
-        "Asphalt Mix Design",
-        "Other special test based on client requirements",
-        "Concrete Structure Inspection and failure assessment",
-        "Structural Integrity, defect and voids in concrete & rock",
-        "Durability Assessment of Reinforced concrete Structure",
-        "NDT Compression test by Schmidt Hammer",
-        "NDT by Pulse Velocity for concrete",
-        "Core Drilling",
-        "Steel Rebar Testing",
-        "Rebar Locator & cover distance measurement",
-        "Pull off Test",
-        "Concrete coating Thickness measurement",
-        "Concrete Mix Design",
-        "Structure and Foundation Testing",
-        "Brick & Block Testing",
-        "Site Investigation",
-      ],
-      icon: "/landing/services/3.svg",
       featured: true,
     },
   ];
@@ -244,21 +117,11 @@ export default function Services() {
 
               {/* Description */}
               <div className="flex-grow">
-                <ul className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-sm leading-relaxed mb-6 text-gray-800 group-hover:text-white/90 transition-colors duration-500">
-                  {Array.isArray(service.description) ? (
-                    service.description.map((point, index) => (
-                      <li
-                        key={index}
-                        className="flex items-start gap-2 text-left"
-                      >
-                        <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-pink-700 group-hover:bg-white flex-shrink-0"></span>
-                        <span className="text-md">{point}</span>
-                      </li>
-                    ))
-                  ) : (
-                    <li>{service.description}</li>
-                  )}
-                </ul>
+                <div className="flex-grow">
+                  <p className="text-sm leading-relaxed mb-6 text-gray-800 group-hover:text-white/90 transition-colors duration-500">
+                    {service.description}
+                  </p>
+                </div>
               </div>
 
               {/* Get Started Button */}

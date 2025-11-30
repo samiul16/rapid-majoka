@@ -13,7 +13,7 @@ export default function ProjectPage() {
       />
 
       <Portfolio />
-      <MeetOurTeam />
+      {/* <MeetOurTeam /> */}
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function ProjectPage() {
         imagePath="/project.jpg"
       />
       <Services />
-      <MeetOurTeam />
+      {/* <MeetOurTeam /> */}
       <ClientTestimonials />
     </div>
   );

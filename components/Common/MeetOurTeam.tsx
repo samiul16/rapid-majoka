@@ -18,43 +18,45 @@ const WorkSteps = () => {
 
   const teamMembers = [
     {
-      name: "Anait",
-      position: "Chief Executive Officer (CEO) (Majoka Engineering)",
-      image: "/team-members/Anait.jpg",
-    },
-    {
-      name: "Ismail",
-      position: "Project Manager (Majoka Engineering)",
-      image: "/team-members/Ismail.jpg",
-    },
-    {
-      name: "Luqman",
-      position: "Project Management Specialist (Majoka Engineering)",
-      image: "/team-members/Luqman.jpg",
-    },
-    {
-      name: "Mohammad Noor",
-      position: "Chief Executive Officer (Majoka Engineering)",
-      image: "/team-members/Mohammad Noor.jpg",
-    },
-    {
-      name: "Nauman",
-      position: "Project Management Specialist (Majoka Engineering)",
+      name: "Nauman Safdar Majoka",
+      position: "Director",
       image: "/team-members/NAUMAN.jpg",
     },
     {
-      name: "Rizwan",
-      position: "Project Management Specialist (Majoka Engineering)",
-      image: "/team-members/Rizwan.jpg",
+      name: "Ismail Noor Hossain",
+      position: "General Manager",
+      image: "/team-members/Ismail.jpg",
     },
     {
-      name: "Tasawar",
-      position: "Project Management Specialist (Majoka Engineering)",
+      name: "Anait Hussain Mukhtar",
+      position: "Sr. Quality Manager",
+      image: "/team-members/Anait.jpg",
+    },
+    {
+      name: "Luqman Safdar Majoka",
+      position: "Sales Manager",
+      image: "/team-members/Luqman.jpg",
+    },
+
+    {
+      name: "Rizwan Safdar Majoka",
+      position: "Operation Manager",
+      image: "/team-members/Rizwan.jpg",
+    },
+
+    {
+      name: "Tasawar Hussain Majoka ",
+      position: "Research and Development  Manager",
       image: "/team-members/Tasawar.jpg",
     },
     {
-      name: "Younus",
-      position: "Project Management Specialist (Majoka Engineering)",
+      name: "Mohammed Noor Hossain",
+      position: "Marketing Manager ",
+      image: "/team-members/Mohammad Noor.jpg",
+    },
+    {
+      name: "Younus Noor Hossain",
+      position: "Planning Manager",
       image: "/team-members/Younus.jpg",
     },
   ];
@@ -229,12 +231,12 @@ const WorkSteps = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-4xl sm:text-4xl text-center font-bold text-white tracking-[-0.4px]">
+                  <h3 className="text-2xl sm:text-2xl text-center font-bold text-white tracking-[-0.4px]">
                     {member.name}
                   </h3>
-                  {/* <p className="text-base sm:text-xl text-white">
+                  <p className="text-base sm:text-xl text-center text-white">
                     {member.position}
-                  </p> */}
+                  </p>
                 </div>
               </div>
             ))}

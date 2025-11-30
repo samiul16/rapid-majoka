@@ -15,7 +15,10 @@ interface Service {
   title: string;
   description: string;
   highlights: string[];
-  services: string[];
+  services: {
+    name?: string;
+    services?: string[];
+  }[];
   image: string;
 }
 
@@ -44,284 +47,270 @@ const ServicesContent = () => {
   const servicesData: Service[] = [
     {
       id: 1,
-      name: "Inspection",
-      title: "Inspection",
+      name: "Manpower Supply",
+      title: "Manpower Supply",
       description:
-        "Ensure the highest standards of quality, safety, and compliance with our comprehensive Inspection services. We cover a wide range of inspections across industries to help you identify risks, improve processes, and maintain operational excellence.",
+        "Our Manpower Supply service ensures you get reliable, trained, and experienced professionals for any type of project. Whether you need technical experts, site workers, operators, supervisors, or support staff, we deliver fully vetted and qualified manpower tailored to your project requirements. We focus on quality, safety, and timely deployment to ensure your operations run smoothly and efficiently.",
       highlights: [
-        "Wide Coverage: Mechanical, Electrical, Civil, Factory inspections & audits",
-        "Expert Evaluation: Detect flaws and ensure compliance",
-        "Auditor Training: Equip your team with effective inspection skills.",
+        "Vetted & Certified Workforce: Properly screened, verified, and skill-tested professionals.",
+        "Flexible Deployment: Short-term, long-term, or project-based manpower as needed.",
+        "Industry Expertise: Specialists for construction, oil & gas, MEP, logistics, and industrial sectors.",
       ],
-      services: [
-        "Vendor Inspection",
-        "Mechanical Inspection",
-        "Electrical Inspection",
-        "Civil Inspection",
-        "Factory Assessment",
-        "Factory Audit",
-        "Auditor Training",
-      ],
+      services: [],
       image: "Inspection",
     },
     {
       id: 2,
-      name: "Force & Torque Calibration",
-      title: "Force & Torque Calibration",
+      name: "Equipment Rental",
+      title: "Equipment Rental",
       description:
-        "Our Force & Torque services provide accurate measurement, calibration, and testing solutions to ensure reliability and safety in industrial applications. Using advanced equipment and expert techniques, we help you maintain optimal performance and compliance.",
+        "Our Equipment Rental service provides high-quality, fully maintained machinery and tools to support construction, industrial, and infrastructure projects of all sizes. We offer a wide range of equipment including heavy machinery, power tools, lifting devices, generators, testing machines, and more. Every equipment is regularly inspected, calibrated (where required), and delivered with complete safety assurance. Whether you need equipment for a few days or for long-term projects, we ensure fast delivery, technical support, and cost-effective rental plans to keep your operations running smoothly without interruption.",
       highlights: [
-        "Accurate Measurement: High-precision force and torque testing.",
-        "Reliable Calibration: Ensure your tools meet standard specifications.",
-        "Comprehensive Solutions: From gauges to universal testing machines, we cover it all.",
+        "Wide Equipment Range: Machinery and tools for construction, industrial, and testing needs.",
+        "Well-Maintained & Safe: Fully inspected and ready-to-use equipment with safety assurance.",
+        "Flexible Rental Plans: Daily, weekly, monthly, and project-based rental options.",
       ],
-      services: [
-        "Torque Calibrators",
-        "Torque Wrenches",
-        "Torque Gauges",
-        "Load Cells",
-        "Force Gauges",
-        "Tension Gauges",
-        "Compression Machines",
-        "Tensile Testing Machines",
-        "Hydraulic Jacks",
-        "Universal Testing machines up to 60T",
-      ],
+      services: [],
       image: "Force",
     },
     {
       id: 3,
-      name: "Process Control Instrumentation",
-      title: "Process Control Instrumentation",
+      name: "Scaffolding Rental",
+      title: "Scaffolding Rental",
       description:
-        "Our Process Control Instrumentation services offer accurate monitoring, measurement, and calibration solutions for industrial processes. We ensure your systems operate safely, efficiently, and within regulatory standards using state-of-the-art instruments and expert techniques.",
+        "Our Scaffolding Rental service provides high-quality, secure, and project-ready scaffolding systems designed to support construction, inspection, and industrial maintenance work. All scaffolding materials are safety-checked, load-tested, and installed by trained professionals to ensure stability and compliance with industry standards. Whether your project is short-term or long-term, we deliver reliable solutions tailored to height, load, and work requirements.",
       highlights: [
-        "Precise Monitoring: Accurate measurement of pressure, temperature, flow, and level.",
-        "Reliable Calibration: Ensure all instruments meet industry standards.",
-        "Comprehensive Solutions: Safety devices, detectors, converters, and testing facilities included.",
+        "Certified & Safe Systems: Fully compliant with industry safety standards.",
+        "Professional Installation: Trained technicians for setup, inspection & dismantling.",
+        "Flexible Rental Plans: Short-term, long-term, and project-based rental options.",
       ],
-      services: [
-        "Pressure Transmitters",
-        "Temperature Transmitters",
-        "Level Transmitters",
-        "Flow Transmitters",
-        "Volumetric Measurements",
-        "Auto Label",
-        "Safety Relief Valves",
-        "I/P Converters",
-        "Multi gas Detectors",
-        "Anemometers",
-        "Tachometers",
-        "Densitometers",
-        "Hydro testing Facilities",
-        "Tension & Accessory Calibrators",
-      ],
+      services: [],
       image: "Process Control Instrumentation",
     },
     {
       id: 4,
-      name: "Electrical & Electronics",
-      title: "Electrical & Electronics",
+      name: "Inspection Services",
+      title: "Inspection Services",
       description:
-        "Our Electrical & Electronics services provide precise testing, measurement, and calibration for a wide range of electrical and electronic equipment. We help ensure safety, performance, and compliance using advanced instruments and expert techniques.",
+        "Mazoka offers professional inspection services, assessing structural integrity and safety. Our detailed inspections ensure compliance with industry standards, providing peace of mind.",
       highlights: [
-        "Accurate Testing: For all digital, analogue, and high-voltage equipment.",
-        "Reliable Calibration: Maintain compliance and optimal performance.",
-        "Comprehensive Solutions: Covering multimeters, testers, power supplies, and detectors.",
+        "Detailed Assessments: Comprehensive inspections for structural integrity.",
+        "Safety Compliance: Ensuring all projects meet industry standards.",
+        "Reliable Results: Providing accurate and detailed inspection reports.",
       ],
       services: [
-        "Digital & Analogue multimeters",
-        "Clamp meters",
-        "Insulation testers",
-        "Earth resistance testers",
-        "Ohm meters",
-        "Ampere meters",
-        "High voltage testers",
-        "Frequency meters",
-        "Volt meters",
-        "Power supplies",
-        "Digital Earth Testers",
-        "Megger Testers",
-        "High Voltage Porosity Detectors",
+        {
+          name: "",
+          services: [
+            "Vendor Inspection",
+            "Mechanical Inspection",
+            "Electrical Inspection",
+            "Civil Inspection",
+            "Factory Assesment",
+            "Factory Audit",
+            "Auditor Training",
+          ],
+        },
       ],
       image: "Electrical-Electronics",
     },
     {
       id: 5,
-      name: "Lifting & Non-Destructive Equipment",
-      title: "Lifting & Non-Destructive Equipment",
+      name: "Calibration",
+      title: "Calibration",
       description:
-        "Our Lifting & Non-Destructive Equipment services ensure safety, reliability, and accuracy in industrial operations. From crane certification to advanced non-destructive testing instruments, we provide expert inspection, testing, and calibration solutions to enhance operational efficiency and compliance.",
+        "Majoka specializes in calibration services, ensuring equipment accuracy and reliability. Our skilled technicians provide precise calibration for various instruments, maintaining high standards.",
       highlights: [
-        "Safe Lifting: Certification and inspection of cranes and lifting devices.",
-        "Precise Testing: Non-destructive equipment for accurate measurement and evaluation.",
-        "Comprehensive Solutions: Covering cranes, detectors, testers, meters, and instruments.",
+        "Precision Calibration: Ensuring accuracy in equipment and instruments",
+        "Skilled Technicians: Experienced professionals for reliable calibration.",
+        "High Standards: Maintaining quality and reliability in all services.",
       ],
       services: [
-        "Crane Certification",
-        "JIB Cranes",
-        "Ultrasonic Flow Detectors",
-        "Hardness Testers",
-        "MPT Yokes",
-        "PMI Equipment",
-        "Lux Meters",
-        "Stop Watches",
-        "Sound Level Meters",
+        {
+          name: "Force, Torque",
+          services: [
+            "Torque Calibrators",
+            "Torque Wrenches",
+            "Torque Gauges",
+            "Load Cells",
+            "Force Gauges",
+            "Universal Testing machines up to 60T on capacity",
+            "Tension Gauges",
+            "Compression Machines",
+            "Tensile Testing Machines",
+            "Hydraulic Jacks",
+          ],
+        },
+        {
+          name: "Process Control Instrumentation",
+          services: [
+            "Pressure Transmitters",
+            "Temperature Transmitters",
+            "Level Transmitters",
+            "Flow Transmitters",
+            "Volumetric Measurements",
+            "Auto Label",
+            "Safety Relief Valves",
+            "I/P Converters",
+            "Multi gas Detectors",
+            "Anemometers",
+            "Tachometers",
+            "Densitometers",
+            "Hydro testing Facilities",
+            "Tension & Accessory Calibrators",
+          ],
+        },
+        {
+          name: "Electrical & Electronics",
+          services: [
+            "Digital & Analogue multimeters",
+            "Clamp meters",
+            "Insulation testers",
+            "Earth resistance testers",
+            "Ohm meters",
+            "Ampere meters",
+            "High voltage testers",
+            "Frequency meters",
+            "Volt meters",
+            "Power supplies",
+            "Digital Earth Testers",
+            "Megger Testers",
+            "High Voltage Porosity Detectors",
+          ],
+        },
+        {
+          name: "Lifting & Non-Destructive Equipment",
+          services: [
+            "Crane Certification",
+            "JIB Cranes",
+            "Ultrasonic Flow Detectors",
+            "Hardness Testers",
+            "MPT Yokes",
+            "PMI Equipment",
+            "Lux Meters",
+            "Stop Watches",
+            "Sound Level Meters",
+          ],
+        },
+        {
+          name: "Pressure",
+          services: [
+            "Pressure Elements",
+            "Pressure Transmitters",
+            "Pressure Gauges",
+            "Pressure Safety Valves",
+            "Manometers",
+            "Pressure Recorders",
+            "Hydraulic",
+            "Pneumatic & Vacuum Pump",
+            "Air Compressors",
+          ],
+        },
+        {
+          name: "Mechanical & Inspection Equipment",
+          services: [
+            "Mechanical Testing Equipment",
+            "Mechanical Measuring Equipment",
+            "Pressure Testing Facilities",
+            "Inspection Tools",
+            "Profile Gauges",
+            "Gauge Block Sets",
+            "Slip Gauges",
+            "Others",
+          ],
+        },
+        {
+          name: "Weights",
+          services: [
+            "Weighing Scales",
+            "Balances",
+            "Top Loads",
+            "Dead Weights",
+            "Other Types of Balances",
+          ],
+        },
+        {
+          name: "Gauge (Dial & Digital)",
+          services: [
+            "Specific Gravity Gauges",
+            "Load Gauges Calibration",
+            "Pressure Calibration",
+            "Dial Gauge Indicators",
+            "Digital Gauge Indicators",
+            "Others",
+          ],
+        },
       ],
       image: "Lifting-Non-Destructive-Equipment",
     },
     {
       id: 6,
-      name: "Pressure Systems",
-      title: "Pressure Systems",
+      name: "Soil Testing Laboratories",
+      title: "Soil Testing Laboratories",
       description:
-        "Our Pressure services offer precise measurement, monitoring, and calibration of pressure systems across industries. We help maintain operational efficiency, safety, and compliance using advanced instruments and expert techniques.",
+        "Majoka provides a wide range of testing services, including soil, concrete, and chemical analysis. Our advanced methods ensure accurate results, supporting construction and engineering projects.",
       highlights: [
-        "Precise Measurement: Accurate monitoring of pressure systems.",
-        "Reliable Calibration: Ensure instruments meet industry standards.",
-        "Comprehensive Solutions: Covering gauges, transmitters, valves, pumps, and compressors.",
+        "Accurate Results: Using advanced technology for precise testing.",
+        "Support for Projects: Ensuring quality and safety in construction.",
+        "Custom Solutions: Tailored contracting services to meet specific needs.",
       ],
       services: [
-        "Pressure Elements",
-        "Pressure Transmitters",
-        "Pressure Gauges",
-        "Pressure Safety Valves",
-        "Manometers",
-        "Pressure Recorders",
-        "Hydraulic & Pneumatic Pumps",
-        "Air Compressors",
+        {
+          name: "",
+          services: [
+            "Soil Testing",
+            "Aggregate Testing",
+            "Concrete Testing",
+            "Cement Testing",
+            "Asphalt and Binder Testing",
+            "Chemical & Water Testing",
+            "Petro graphic Analysis",
+            "Rock and Rock Foundation Testing",
+            "Mortar Testing",
+            "Bitumen Testing",
+            "Super pave Testing",
+            "Field Testing by NDG",
+            "Field Testing by Electrical Density Gauge",
+            "Pavement Investigation",
+            "Asphalt Mix Design",
+            "Other special test based on client requirements",
+            "Concrete Structure Inspection and failure assessment",
+            "Structural Integrity , defect and voids in concrete & rock",
+            "Durability Assessment of Reinforced concrete Structure",
+            "NDT Compression test by Schmidt Hammer",
+            "NDT by Pulse Velocity for concrete",
+            "Core Drilling",
+            "Steel Rebar Testing",
+            "Rebar Locator & cover distance measurement",
+            "Pull off Test",
+            "Concrete coating Thickness measurement",
+            "Concrete Mix Design",
+            "Structure and Foundation Testing",
+            "Brick & Block Testing",
+            "Site Investigation",
+          ],
+        },
       ],
-      image: "Pressure Systems",
+      image: "Lifting-Non-Destructive-Equipment",
     },
     {
       id: 7,
-      name: "Mechanical & Inspection Equipment",
-      title: "Mechanical & Inspection Equipment",
+      name: "General Trading",
+      title: "General Trading",
       description:
-        "Our Mechanical & Inspection Equipment services provide high-precision tools designed for testing, measurement, and inspection across industrial applications. From profile gauges to pressure testing facilities, we offer durable and accurate equipment to help maintain operational quality and compliance.",
+        "Majoka engages in trading, offering a wide range of materials and equipment. Our extensive network ensures the availability of high-quality products, supporting various projects.",
       highlights: [
-        "High Precision: Accurate tools for testing and inspection.",
-        "Durable Equipment: Built for industrial performance.",
-        "Wide Range: Covers gauges, testing tools, and inspection devices.",
+        "Wide Range of Products: Offering materials and equipment for diverse needs.",
+        "Quality Assurance: Ensuring high-quality products for all projects.",
+        "Extensive Network: Reliable supply chain and logistics.",
       ],
       services: [
-        "Mechanical Testing Equipment",
-        "Mechanical Measuring Equipment",
-        "Pressure Testing Facilities",
-        "Inspection Tools",
-        "Profile Gauges",
-        "Gauge Block Sets",
-        "Slip Gauges",
+        {
+          name: "",
+          services: [],
+        },
       ],
-      image: "Mechanical-Inspection-Equipment",
-    },
-    {
-      id: 8,
-      name: "Weights",
-      title: "Weights",
-      description:
-        "Our Weights service provides high-accuracy weighing scales, balances, and calibration weights for industrial, laboratory, and commercial use. We ensure precise measurements essential for testing, calibration, and quality control processes.",
-      highlights: [
-        "Accurate Weighing: Precision scales and balances.",
-        "Reliable Calibration: Supports industrial & lab standards.",
-        "Wide Variety: From top loads to dead weights.",
-      ],
-      services: [
-        "Weights",
-        "Weighing Scales",
-        "Balances",
-        "Top Loads",
-        "Dead Weights",
-        "Other Types of Balances",
-      ],
-      image: "Weights",
-    },
-    {
-      id: 9,
-      name: "Gauge (Dial & Digital)",
-      title: "Gauge (Dial & Digital)",
-      description:
-        "Our Gauge (Dial & Digital) services include precise measurement tools for industrial and laboratory applications. From specific gravity gauges to digital indicators, we ensure accuracy, reliability, and compliance with calibration standards.",
-      highlights: [
-        "High Accuracy: Reliable dial & digital measurement tools.",
-        "Wide Application: Supports pressure, load, and gravity testing.",
-        "Calibrated Performance: Ensures compliance with industry standards.",
-      ],
-      services: [
-        "Specific Gravity Gauges",
-        "Load Gauges Calibration",
-        "Pressure Calibration",
-        "Dial Gauge Indicators",
-        "Digital Gauge Indicators",
-        "Others",
-      ],
-      image: "Gauge-Dial-Digital",
-    },
-    {
-      id: 10,
-      name: "Laboratories & Testing Services",
-      title: "Laboratories & Testing Services",
-      description:
-        "Our Laboratory services provide complete testing, analysis, and evaluation for construction materials, soil, concrete, asphalt, water, and structural components. Using advanced equipment and internationally accepted standards, we deliver accurate and reliable results to support quality control, compliance, and project decision-making. We also provide specialized tests, field investigations, and non-destructive testing (NDT) services to assess material performance, structural integrity, durability, and site conditions.",
-      highlights: [
-        "Accurate Material Testing: Soil, concrete, asphalt, aggregates & more.",
-        "Advanced NDT Solutions: Structural integrity & durability evaluation.",
-        "Field & Site Expertise: On-site testing and investigation services.",
-      ],
-      services: [
-        "Soil Testing",
-        "Aggregate Testing",
-        "Concrete Testing",
-        "Cement Testing",
-        "Asphalt and Binder Testing",
-        "Chemical & Water Testing",
-        "Petro graphic Analysis",
-        "Rock and Rock Foundation Testing",
-        "Mortar Testing",
-        "Bitumen Testing",
-        "Super pave Testing",
-        "Field Testing by NDG",
-        "Field Testing by Electrical Density Gauge",
-        "Pavement Investigation",
-        "Asphalt Mix Design",
-        "Other special test based on client requirements",
-        "Concrete Structure Inspection and failure assessment",
-        "Structural Integrity, defect and voids in concrete & rock",
-        "Durability Assessment of Reinforced concrete Structure",
-        "NDT Compression test by Schmidt Hammer",
-        "NDT by Pulse Velocity for concrete",
-        "Core Drilling",
-        "Steel Rebar Testing",
-        "Rebar Locator & cover distance measurement",
-        "Pull off Test",
-        "Concrete coating Thickness measurement",
-        "Concrete Mix Design",
-        "Structure and Foundation Testing",
-        "Brick & Block Testing",
-        "Site Investigation",
-      ],
-      image: "Laboratories-Testing-Services",
-    },
-    {
-      id: 11,
-      name: "Calibration",
-      title: "Calibration",
-      description:
-        "Our Calibration services ensure the accuracy, reliability, and compliance of your measurement instruments across mechanical, electrical, pressure, temperature, and industrial applications. Using certified equipment and international calibration standards, we provide precise results that help maintain product quality, safety, and operational efficiency. Whether it's gauges, electrical meters, measurement tools, or industrial testing devices—our expert calibration solutions guarantee consistent performance and full traceability.",
-      highlights: [
-        "High Accuracy: Certified calibration for industrial instruments.",
-        "Wide Range: Mechanical, electrical, pressure, temperature & more.",
-        "Compliance Ready: Meets international standards and traceability requirements.",
-      ],
-      services: [
-        "Specific Gravity Gauges",
-        "Load Gauges Calibration",
-        "Pressure Calibration",
-        "Dial Gauge Indicators",
-        "Digital Gauge Indicators",
-        "Others",
-      ],
-      image: "Calibration",
+      image: "Lifting-Non-Destructive-Equipment",
     },
   ];
 
@@ -542,40 +531,75 @@ const ServicesContent = () => {
               </div>
 
               {/* Services List */}
-              <div data-aos="fade-up" data-aos-delay="200">
-                <h2 className="text-stone-900 text-3xl sm:text-4xl font-medium mb-6">
-                  Services
-                </h2>
-                <div className="bg-gray-200/50 rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.12)] px-6 sm:px-8 py-6">
-                  <div className="flex flex-col gap-4">
-                    {currentService?.services.map((service, index) => (
-                      <div
-                        key={index}
-                        className="flex items-start gap-3"
-                        data-aos="fade-left"
-                        data-aos-delay={index * 50}
-                      >
-                        <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1 flex items-center justify-center">
-                          <svg
-                            className="w-4 h-4 text-white"
-                            fill="none"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path d="M5 13l4 4L19 7"></path>
-                          </svg>
-                        </div>
-                        <p className="text-stone-900 text-lg sm:text-xl font-medium flex-1">
-                          {service}
-                        </p>
+
+              {currentService?.services?.length ? (
+                <div data-aos="fade-up" data-aos-delay="200">
+                  <h2 className="text-stone-900 text-3xl sm:text-4xl font-medium mb-6">
+                    Services
+                  </h2>
+
+                  <div className="bg-gray-200/50 rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.12)] px-6 sm:px-8 py-6">
+                    {currentService?.services?.length ? (
+                      <div className="flex flex-col gap-6">
+                        {currentService.services.map((section, idx) => {
+                          // skip empty sections
+                          if (!section?.name && !section?.services?.length)
+                            return null;
+
+                          return (
+                            <div
+                              key={idx}
+                              data-aos="fade-left"
+                              data-aos-delay={idx * 50}
+                            >
+                              {/* Section Title */}
+                              {section.name && (
+                                <h3 className="text-lg sm:text-xl font-semibold text-stone-900 mb-3">
+                                  {section.name}
+                                </h3>
+                              )}
+
+                              {/* Service List */}
+                              {section.services?.length ? (
+                                <div className="flex flex-col gap-3">
+                                  {section.services?.map((item, index) =>
+                                    item ? (
+                                      <div
+                                        key={index}
+                                        className="flex items-start gap-3"
+                                      >
+                                        <div className="w-6 h-6 bg-green-600 rounded-full flex-shrink-0 mt-1 flex items-center justify-center">
+                                          <svg
+                                            className="w-4 h-4 text-white"
+                                            fill="none"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                          >
+                                            <path d="M5 13l4 4L19 7"></path>
+                                          </svg>
+                                        </div>
+
+                                        <p className="text-stone-900 text-lg sm:text-xl font-medium flex-1">
+                                          {item}
+                                        </p>
+                                      </div>
+                                    ) : null
+                                  )}
+                                </div>
+                              ) : null}
+                            </div>
+                          );
+                        })}
                       </div>
-                    ))}
+                    ) : (
+                      <p className="text-stone-700"></p>
+                    )}
                   </div>
                 </div>
-              </div>
+              ) : null}
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function ContactPage() {
       />
       <JoinTeam />
       <Position />
-      <MeetOurTeam />
+      {/* <MeetOurTeam /> */}
     </div>
   );
 }
