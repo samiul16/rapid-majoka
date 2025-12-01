@@ -23,7 +23,7 @@ const anekMalayalam = Anek_Malayalam({
 });
 
 export const metadata: Metadata = {
-  title: "Majoka Contractor",
+  title: "Majoka Engineering",
   description: "Professional services and solutions",
 };
 
